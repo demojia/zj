@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+.approve_idbox{ font-family:"宋体"; font-size:14px; padding:15px;}
+.approve_idbox p{ margin-bottom:5px;}
+.approve_idbox .rove01{ background:url("../../../zhenai2012/img/layer/contact_deliver/sigh_02.gif") no-repeat scroll 0px 0px; padding-left:30px; font-weight:bold;color:#3c3c3c; }
+.approve_idbox .namecolor{ color:#f60;}
+.approve_idbox .rove03{ font-size:12px; background:#eee; color:#8b8b8b; width:520px; padding:5px 10px; margin-bottom:15px;}
+.approve_idbox .immpat_btn{ width:134px; height:38px; background:url("../../../zhenai2012/img/layer/contact_deliver/cart_btn.jpg") no-repeat; display:inline-block; font-size:14px; color:#fff; font-weight:bold; text-align:center; line-height:40px; text-decoration:none;}
+.approve_idbox .paytip{ color:#8b8b8b; font-size:12px; margin-left:5px;}
+.approve_idbox .btn_orange_L {width:140px; text-align:center; padding:0;}
+.approve_idbox .tip_idenZX { display:inline-block; vertical-align:middle; padding:4px 0 0 12px; width:138px; height:34px; font-size:12px; line-height:16px;background:url("../../img/myhome/layer/tips_bg.png") no-repeat;}
+
+.approve_idbox .rove02{font-weight:bold;color:#3c3c3c; }
+.approve_idbox .separator{ border-top:1px dashed #b0b0b0; margin-top:20px; padding-bottom:20px;height:0; overflow:hidden;}
+
+/*恋上同生缘*/
+.approve_prb{ padding:30px 40px 40px 30px; }
+.approve_idbox .btn_orange_mr{ margin-top:30px; }
+.tipsBubble,.tipsBubble2{ width:190px; height:67px; padding:30px 0px 0px 28px; position:absolute; font-size:14px; color:#e6ad60; text-align:center; font-family:"Microsoft YaHei"; background:url(../../img/activity/qixi/bg_bubble.png)!important; background-repeat:no-repeat; background-position:center;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.zhenai.com/zhenai3/zhenai2012/img/activity/qixi/bg_bubble.png'); _background-image:none; }
+.tipsBubble{ right:90px; }
+.tipsBubble2{ margin-top:-38px; right:35px; }
+.iconTips{ float:right; width:27px; height:27px; margin:28px 0px 0px 10px; overflow:hidden; background:url(../../img/public/icon/middle/ban.gif) no-repeat; }
+.fs14_fwb{ font-size:14px; font-weight:bold; }

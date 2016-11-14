@@ -1,0 +1,24 @@
+.fl{float: left;}
+.buy-service{padding: 30px;}
+.buy-service .title{height: 44px;padding: 0 14px;line-height: 44px;font-size: 16px;color: #666666;background: #f7f8f8;}
+.buy-service .floor{border: 1px solid #fff;}
+.buy-service .floor-2{position: relative;margin-top: 10px;}
+.buy-service .floor-border{position: relative;border: 1px solid #e5e5e5;}
+.buy-service .servie-box{padding: 25px 0;cursor: pointer;}
+.buy-service .servie-radio{width: 94px;padding: 22px 0;height: 16px;text-align: center;}
+.buy-service .servie-icon{width: 106px;height: 60px;background: url('http://images.zastatic.com/zhenai3/zhenai2012/img/pay2015/servie.png') no-repeat 0 0;}
+.buy-service .message-icon{background-position: 0 -88px;}
+.buy-service .vip-icon{background-position: 0 -188px;}
+.buy-service .servie-info{width: 300px;height: 52px;padding-top: 8px;}
+.buy-service .radio{display: inline-block;width: 16px;height: 16px;background: url('http://images.zastatic.com/zhenai3/zhenai2012/img/pay2015/radio.png') no-repeat -2px -4px;}
+.buy-service .servie-name{line-height: 24px;font-size: 16px;color: #333;}
+.buy-service .servie-price{line-height: 24px;font-size: 14px;color: #999999;}
+.buy-service .orange{font-size: 16px;color: #ff6600;}
+.buy-service .servie-btn{display: inline-block;width: 184px;height: 48px;line-height: 48px;font-size: 16px;color: #fff;background: #ff8800;text-decoration: none;text-align: center;border-radius: 2px;}
+.buy-service .servie-btn:hover{color: #fff;text-decoration: none;}
+.buy-service .mark{position: absolute;top: 0;right: 0;width: 86px;height: 72px;background: url('http://images.zastatic.com/zhenai3/zhenai2012/img/pay2015/mark-6.png') no-repeat 1px -2px;}
+.buy-service .servie-btn-box{margin-top: 30px;text-align: center;}
+.buy-service .select{border: 1px solid #1dacd2;}
+.buy-service .select .floor-border{position: relative;border: 1px solid #1dacd2;}
+.buy-service .select .radio{background-position: -2px -26px;}
+.buy-service .floor-break{height: 8px;}

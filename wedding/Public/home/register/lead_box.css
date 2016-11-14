@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.btn_gm_pink { background:#f15fa5;}
+.btn_gm_pink:hover { background:#f274b1;}
+.btn_gm_blue { background:#66b7eb;}
+.btn_gm_blue:hover { background:#77c2f3;}
+.btn_gm_orange { background:#f07622;}
+.btn_gm_orange:hover { background:#f88535;}
+.btn_gm_gray { background:#bdbdbd; cursor:default;}
+a.btn_gm_pink span,a.btn_gm_blue span,a.btn_gm_orange span,a.btn_gm_gray span { display:inline-block; height:100%; width:48px; text-align:center;}
+.btn_gmR_blue,.btn_gmR_blue span { background:url(btn_blue.png)/*tpa=http://images.zhenai.com/zhenai3/zhenai2012/img/statecos/btn_blue.png*/ no-repeat;}
+.btn_gmR_blue span,.btn_gmR_pink span { display:inline-block; padding:0 20px 0 15px; height:42px; line-height:42px; color:#fff; font-weight:bold; font-size:14px;}
+.btn_gmR_blue { padding-left:5px; display:inline-block;  background-position:0 -150px;}
+.btn_gmR_blue span {  background-position:100% -50px;}
+.btn_gmR_blue:hover { text-decoration:none; cursor: pointer;background-position:0 -100px;}
+.btn_gmR_blue:hover span { background-position:100% 0;}
+
+.btn_gmR_pink,.btn_gmR_pink span { background:url(btn_pink.png)/*tpa=http://images.zhenai.com/zhenai3/zhenai2012/img/statecos/btn_pink.png*/ no-repeat;}
+.btn_gmR_pink { padding-left:5px; display:inline-block;  background-position:0 -150px;}
+.btn_gmR_pink span { background-position:100% -50px;}
+.btn_gmR_pink:hover { text-decoration:none; cursor: pointer;background-position:0 -100px;}
+.btn_gmR_pink:hover span { background-position:100% 0;}  
+
+.statecos_lead_box { width:600px; height:450px; background:#fff;}
+.statecos_lead_box .banner { position:relative; height:136px; background:url(enter_baner2.png)/*tpa=http://images.zhenai.com/zhenai3/zhenai2012/img/statecos/enter_baner2.png*/ no-repeat;}
+.statecos_lead_box .banner .close { position:absolute; right:20px; top:15px; width:24px; height:23px; background: url(layer_close.png)/*tpa=http://images.zhenai.com/zhenai3/zhenai2012/img/statecos/layer_close.png*/ no-repeat center center;}
+.statecos_lead_box .content { padding:25px 30px; color:#666; font-size:14px;}
+.statecos_lead_box .content .accredit { padding-bottom:15px;}
+.statecos_lead_box .content .accredit input { display:inline-block; vertical-align:middle; padding:6px 8px; margin-right:10px; width:160px; border:1px solid #d3d3d3; font-size:14px; color:#999;}
+.statecos_lead_box .content .accredit .bantip { padding-left:20px; font-size:12px; background:url(ban_1.png)/*tpa=http://images.zhenai.com/zhenai3/zhenai2012/img/public/icon/small/ban_1.png*/ left no-repeat; color:#b38229;}
+.statecos_lead_box .content .accredit .righttip { position:relative; zoom:1; padding-left:20px; background:url(icon_right.gif)/*tpa=http://images.zhenai.com/zhenai3/zhenai2012/img/public/icon/small/icon_right.gif*/ left no-repeat;}
+.statecos_lead_box .content .workmate { padding:0px 0 15px 55px;}
+.statecos_lead_box .content .workmate input { margin-right:3px; _margin-right:0; display:inline-block; vertical-align:middle;}
+.statecos_lead_box .content .workmate label { display:inline-block; vertical-align:middle;}
+.statecos_lead_box .content .action { padding: 0 0 20px 55px;}
+.statecos_lead_box .content .action a { margin-right:20px;}
+.statecos_lead_box .content .details { padding:15px 0 0 0; border-top:1px solid #ebebeb; line-height:2em;}
+
+
+
+
+

@@ -1,0 +1,17 @@
+@charset "utf-8";
+.torange{ color:#f60;}
+.approve_info .state{ text-align:center; padding:20px 20px; border-bottom:1px dashed #b0b0b0;}
+.approve_info .state i{ display:inline-block; vertical-align:middle; width:27px; height:27px; margin-right:10px;}
+.approve_info .state .txt{ display:inline-block; vertical-align:middle; text-align:left; line-height:18px;}
+.approve_info .state .txt em{ font-style:normal; color:#717171;}
+.approve_info .success i{ background:url(../../img/public/icon/middle/success.png) no-repeat;}
+
+.approve_info .warn i{ background:url(../../img/public/icon/middle/ban.gif) no-repeat;}
+.approve_info .info_list{ background:#eee; padding:20px 80px;}
+.approve_info .info_list dt{ font-size:14px; font-weight:bold;  margin-bottom:10px;}
+.approve_info .info_list dd{ margin-left:20px; margin-bottom:10px;}
+.approve_info .info_list dd img{ width:160px; height:120px; padding:4px 4px 11px 4px; background:url(../../img/zx_member/picbg3.png) no-repeat center bottom #fff; margin-right:20px; vertical-align:middle;}
+.approve_info .info_list .tblue{ color:#0097d3;}
+.approve_info .info_list .t71{ color:#717171;}
+.approve_info .info_list .torange{ color:#f60;}
+.approve_info .state .idcardBox{ margin:0 auto; text-align:left;}

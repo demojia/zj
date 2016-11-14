@@ -1,0 +1,14 @@
+/* 仅红娘推荐可见 */
+
+.matchmaker_lead_box,.matchmaker_delegate { padding:30px 40px 50px; font-size:14px;}
+.matchmaker_lead_box p,.matchmaker_delegate p { padding-bottom:20px; color:#333;}
+.matchmaker_lead_box .act { line-height:40px; color:#666;}
+.matchmaker_lead_box .act a { margin-right:20px;}
+.matchmaker_lead_box .act span,.matchmaker_lead_box span.tel { display:inline-block;zoom:1;_display:inline; vertical-align:middle; line-height:40px; font-size:24px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#f60;
+}
+
+.matchmaker_delegate {padding:40px 40px 30px; }
+.matchmaker_delegate .act { padding-top:10px; text-align:center;}
+.matchmaker_delegate .act a { margin:0 5px;}
+.matchmaker_delegate p { line-height:28px;}
+.matchmaker_delegate p a.about { font-size:14px; text-decoration:underline;}

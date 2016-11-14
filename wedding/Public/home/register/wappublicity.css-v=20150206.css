@@ -1,0 +1,222 @@
+@charset "gb2312";
+/* CSS Document */
+/* reset */
+.left_banner{ display:block; margin-bottom:10px;}
+.banner_mt10{ margin-top:10px;}
+
+.loginBox{ width:130px;}
+.wapbox{ width:60px; height:28px; padding-top:10px; float:left;}
+.wapbox a.phone_ico{background:url(phone_ico.gif)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/phone_ico.gif*/ no-repeat; padding-left:15px; color:#fff; height:16px; display:block;}
+/*µÇÂ½Ò³*/
+#xyLoginedBox a{ float:left;}
+.xyLoginedBox{ line-height:normal;}
+#xyLoginedBox a.phone_ico02{ background:url(phone_ico02.gif)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/phone_ico02.gif*/ no-repeat scroll 0 0; background-position:0 3px; background-position:0 0px\9; padding-left:15px; color:#fff; margin-right:15px; margin-top:1px\9;}
+#xyLoginBox a.phone_ico02{ background:url(phone_ico02.gif)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/phone_ico02.gif*/ no-repeat; padding-left:15px; color:#fff; height:16px; display:block; margin-right:15px; margin-top:2px; float:left;}
+
+/*Ðû´«Ò³*/
+.top_box{ width:100%; height:59px; background:url(top_repeat.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/top_repeat.jpg*/ repeat-x;}
+.w900{ width:900px; margin:0 auto;}
+.top_box .logo_box{ width:105px; float:left;}
+.top_box .too_tip{ width:215px; height:59px; background:url(too_tip.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/too_tip.jpg*/ no-repeat; float:left;}
+.top_box .w900 .phone_zhenai{ float:right; font-size:12px; color:#b7e1ff; display:block; margin:30px 0 0 0; cursor:pointer; text-decoration:underline;}
+.top_box .w900 a.phone_zhenai02{ float:right; font-size:12px; color:#b7e1ff; display:block; margin:30px 0 0 0; cursor:pointer; text-decoration:underline;}
+/*top_end*/
+.center_box02{ width:100%; background:url(ban_left.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/ban_left.jpg*/ repeat-x; height:432px;}
+.banner_box{ width:900px; height:432px; margin:0 auto; background:url(ban.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/ban.jpg*/ no-repeat;}
+
+.bottom_box{ width:100%; height:289px; background:url(gray.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/gray.jpg*/ repeat-x;}
+.bottom_box .w900{ width:900px; margin:0 auto;}
+.bottom_box .w900 .text_box{ padding:30px 0 45px 130px; margin-bottom:15px; background:url(btbg.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/btbg.jpg*/ repeat-x bottom; font-family:"Î¢ÈíÑÅºÚ";}
+.bottom_box .w900 .text_box .send{ width:165px; height:75px; background:url(send.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/send.jpg*/ no-repeat;}
+.bottom_box .w900 .text_box .inputbox{ padding:0 0 0 25px;}
+.bottom_box .w900 .text_box .phoneno{ width:335px; height:36px; background:url(phoneno.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/phoneno.jpg*/ no-repeat; line-height:30px; margin:0 10px 0 2px; padding-left:5px; float:left; font-size:16px; border:none;}
+.bottom_box .w900 .text_box .inputbox span{ font-size:14px;  color:#333;  display:block; float:left; margin-top:7px;}
+.bottom_box .w900 .text_box .fasong{ width:103px; height:36px; background:url(fasong.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/fasong.jpg*/ no-repeat; display:block; float:left;}
+.bottom_box .w900 .text_box .daoshu_btn{ width:143px; height:36px; background:url(daoshu_btn.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/daoshu_btn.jpg*/ no-repeat; color:#999; font-size:16px; float:left; display:block; text-align:center; line-height:35px; text-decoration:none; cursor:default; border:none;}
+.bottom_box .w900 .text_box .yellow_btn{ width:103px; height:36px; background:url(yellow_btn.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/yellow_btn.jpg*/ no-repeat; color:#333; font-size:16px; float:left; display:block; text-align:center; line-height:35px; text-decoration:none; cursor:pointer; border:none;}
+.bottom_box .w900 .text_box .tipp{  color:#f53232; font-size:12px; padding:5px 0 0 180px; clear:both;}
+
+/*ÏÂÃæÊÇ·¢ËÍ³É¹¦*/
+.bottom_box .w900 .sendwap{width:165px; height:25px; background:url(send.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/send.jpg*/ no-repeat;}
+.bottom_box .w900 .yes_box{ overflow:hidden; padding:45px 0 0 130px;}
+.bottom_box .w900 .yes_box .yesp{ color:#14ae00; font-size:14px; background:url(yesp.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/yesp.jpg*/ no-repeat; padding-left:50px; height:37px; width:290px; line-height:35px; float:left;}
+.bottom_box .w900 .yes_box .gainz_btn{ width:103px; height:36px; display:block; background:url(gainz_btn.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/gainz_btn.jpg*/ no-repeat; float:left;}
+
+/*µ×²¿ÑùÊ½*/
+.bottom_box .w900 .foot_box{font-size:12px; color:#333; text-align:center;}
+.bottom_box .w900 .foot_box a{  text-decoration:none; color:#333;}
+.bottom_box .w900 .foot_box a:hover{ text-decoration:underline;}
+.bottom_box .w900 .foot_box p{ margin-top:5px;}
+
+
+/*µÚ¶þÆÚ*/
+.middle_box1000{ background:url(gray_repeat_x.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/gray_repeat_x.jpg*/ repeat-x; width:100%; height:851px; padding-top:155px; font-family:"Î¢ÈíÑÅºÚ";}
+.banner_box1000{ background:url(banner_bg.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/banner_bg.jpg*/ no-repeat center #000; width:100%; height:351px;}
+.phone_info_box{ width:900px; margin:0 auto; position:relative; }
+
+.tab_text_box{ position:absolute; top:-28px; left:510px; width:280px;}
+.tab_text_box .appletab a{ background:url(iphone_tab_onoff.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/iphone_tab_onoff.png*/ no-repeat scroll 0 -32px; width:102px; height:22px; display:block;}
+.tab_text_box .appletab a.on{ background-position:0 0;}
+.tab_text_box .tab_on_bg{ display:block; width:20px; height:17px; background:url(tab_on_bg.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/tab_on_bg.png*/ no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.zhenai.com/zhenai3/images/newUI/wappublicity/tab_on_bg.png'); _background-image:none; position:absolute; top:28px; left:48px;}
+.tab_text_box .appletab{ float:left; position:relative;}
+.tab_text_box .line_22{ width:3px; height:22px; background:url(line_22.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/line_22.jpg*/ no-repeat; float:left; margin:0 5px;}
+.tab_text_box .androidtab{ float:left; position:relative;}
+.tab_text_box .androidtab a{ background:url(iphone_tab_onoff.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/iphone_tab_onoff.png*/ no-repeat scroll 0 -96px; width:140px; height:22px; display:block; }
+.tab_text_box .androidtab .on{ background-position:0 -64px;}
+
+
+.phone_info_box .tab_phone_box{ position:relative;}
+.phone_info_box .tab_phone_box .android_phone_box{ background:url(andronid_phone_bg.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/andronid_phone_bg.jpg*/ no-repeat; width:282px; height:523px; position:absolute; top:-93px; left:5px; display:none;}
+.tab_phone_box .android_info_box{ position:absolute; left:400px; top:155px; display:none;}
+.tab_phone_box .Android_free_dow{ background:url(Android_free_dow_link.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/Android_free_dow_link.png*/ no-repeat;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.zhenai.com/zhenai3/images/newUI/wappublicity/Android_free_dow_link.png'); _background-image:none; width:240px; height:60px; border:none; cursor:pointer;}
+.tab_phone_box p{ font-size:12px; color:#fff; padding-left:10px; padding-top:5px;}
+
+
+.phone_info_box .tab_phone_box .apple_phone_box{ background:url(apple_phone_bg.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/apple_phone_bg.jpg*/ no-repeat; width:282px; height:522px; position:absolute; top:-95px; left:5px;}
+.tab_phone_box .apple_info_box{ position:absolute; left:400px; top:155px; }
+
+.tab_phone_box .app_store_dow{ width:240px; height:56px; background:url(app_store_dow_link.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/app_store_dow_link.png*/ no-repeat;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.zhenai.com/zhenai3/images/newUI/wappublicity/app_store_dow_link.png'); _background-image:none;  border:none; cursor:pointer; margin-right:10px;}
+.tab_phone_box .app_store_dow02{ width:240px; height:56px; background:url(app_store_dow_link02.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/app_store_dow_link02.png*/ no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.zhenai.com/zhenai3/images/newUI/wappublicity/app_store_dow_link02.png'); _background-image:none;  border:none; cursor:pointer; margin-right:10px; cursor:default; font-size:12px;}
+
+.tab_phone_box .bendi_dow{ width:158px; height:56px; background:url(bendi_dow_link.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/bendi_dow_link.png*/ no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.zhenai.com/zhenai3/images/newUI/wappublicity/bendi_dow_link.png'); _background-image:none; border:none; cursor:pointer;}
+
+
+.tab_phone_box .text_tip{ font-size:45px; color:#fff; position:absolute; left:400px; top:75px;}
+.tab_phone_box .text_tip span{ display:block; line-height:45px;}
+/*banner_box_end*/
+.two_code_no{ width:900px; margin:0 auto; }
+.two_code_no .w860{ width:860px; margin:0 auto; border-bottom:#c2c2c2 1px dashed; padding-top:135px; padding-bottom:10px; overflow:hidden; height:134px;}
+.two_code_no .tow_code_box{ width:400px; float:left; padding-top:10px;}
+.two_code_no .tow_code_box .towimg{ width:106px; height:106px; float:left; margin-right:12px;}
+.two_code_no .tow_code_box .p01{ font-size:20px; color:#c3c3c3; padding:3px 0 18px 0;}
+.two_code_no .tow_code_box .p02{ font-size:14px; color:#333; line-height:23px;}
+
+
+.two_code_no .text_no_box{ width:440px; padding-left:19px;  border-left:#c2c2c2 1px dashed; float:left; padding-top:10px; position:relative;}
+.two_code_no .text_no_box .sele_iporad{ position:absolute; top:-25px; left:18px; width:95px; border:#cacaca 1px solid; font-family:"Î¢ÈíÑÅºÚ"; font-size:14px;}
+.two_code_no .text_no_box .p03{font-size:20px; color:#c3c3c3; padding:3px 0 18px 0;}
+.two_code_no .text_no_box .p04{ font-size:14px; background:url(phone_e_ico.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/phone_e_ico.jpg*/ no-repeat; padding:0px 0 3px 25px;}
+.two_code_no .text_no_box .p05{ color:#eb5300; font-size:12px; clear:both;}
+.two_code_no .text_no_box .inp_btn{ overflow:hidden;}
+.two_code_no .text_no_box .inp_textbg{ width:293px; height:38px; background:url(inp_textbg.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/inp_textbg.jpg*/ no-repeat; border:none; float:left; line-height:38px; padding-left:6px; color:#00a0e5; font-size:18px;}
+.two_code_no .text_no_box a.bleu_free_send_btn{ width:103px; height:35px; background:url(bleu_free_send_btn.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/bleu_free_send_btn.jpg*/ no-repeat; color:#fff; font-size:18px; text-align:center; line-height:35px;  margin-left:10px; text-decoration:none; border:none; display:block; float:left;}
+/*ÇéÔµ_ËÑË÷_¸½½ü*/
+.three_box{width:860px; margin:0 auto; overflow:hidden; padding:24px 0 0 0;}
+
+.three_box .qingyuan,.sousuo,.fujin{ width:284px; height:148px; float:left; background:url(bottom_text_bg.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/bottom_text_bg.jpg*/ no-repeat; position:relative;}
+.three_box .p06{ font-size:20px; color:#333; padding:20px 0 0 20px;}
+.three_box .p07{ font-size:12px; color:#333; padding:20px 0 0 20px;}
+.three_box .qingyuan{ margin-right:4px;}
+.three_box .sousuo{ margin-right:4px;}
+.three_box .qybg{ width:42px; height:34px; background:url(qingyuan.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/qingyuan.jpg*/ no-repeat; display:block; position:absolute; top:10px; right:10px;}
+.three_box .ssbg{ width:35px; height:37px; background:url(sousuo.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/sousuo.jpg*/ no-repeat; display:block; position:absolute; top:6px; right:8px;}
+.three_box .fjbg{ width:30px; height:41px; background:url(fujin.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/fujin.jpg*/ no-repeat; display:block; position:absolute; top:7px; right:7px;}
+/*µ×²¿ÑùÊ½*/
+.wap_foot_box{ width:100%; background:url(bottom_repeat_x.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/bottom_repeat_x.jpg*/ repeat-x; height:69px; border-top:#fff 1px solid; text-align:center; padding:25px 0 0 0; }
+.wap_foot_box a{ color:#333;}
+.wap_foot_box p{ color:#333;}
+
+/*ÊÖ»úÕä°®Íø*/
+.top_box .top_rigp{ float:right; width:140px; color:#b7e1ff; margin:30px 10px 0 0px;}
+.top_box .top_rigp a{ color:#b7e1ff;}
+.heig_856{ height:698px; padding:158px 0 0 0;}
+.banner_box_02{ width:100%; height:350px; background:url(banner_box_02.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/banner_box_02.jpg*/ repeat-x;}
+.anzuo_g3{ width:268px; height:625px; background:url(anzuo_g3.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/anzuo_g3.png*/ no-repeat;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.zhenai.com/zhenai3/images/newUI/wappublicity/anzuo_g3.png'); _background-image:none; position:absolute; top:-90px; left:5px;}
+.an_ap_bg900{ width:900px; height:402px; background:url(an_ap_bg900.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/an_ap_bg900.jpg*/ no-repeat; margin:0 auto; position:relative;}
+.two_code_no .w860_bor{width:860px; margin:0 auto; padding-top:140px; _padding-top:80px; padding-bottom:10px; overflow:hidden;}
+.an_ap_bg900 .tip_h40{ font-size:40px; color:#333; position:absolute; top:-84px; left:480px; line-height:45px;}
+.an_ap_bg900 .tip_h22{ color:#5b5a5a; font-size:22px; position:absolute; top:-30px; right:260px}
+.an_ap_bg900 .tip_bg{ width:389px; height:119px; background:url(wap_z_bg.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/wap_z_bg.png*/ no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.zhenai.com/zhenai3/images/newUI/wappublicity/wap_z_bg.png'); _background-image:none; position:absolute; top:120px; left:286px;}
+
+.middle_box1000 .two_code_no .grey_free_send_btn{ cursor:default; width:128px; height:35px; background:url(grey_free_send_btn.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/grey_free_send_btn.jpg*/ no-repeat; color:#fff; font-size:12px; text-align:center; line-height:35px; margin:3px 0 0 5px; text-decoration:none; border:none; display:block; float:left; cursor:default;}
+#m3,#m6 { position: relative;}
+
+/*20140401*/
+
+.main-nav {background: url("main-nav-bg.png")/*tpa=http://i1.zastatic.com/zhenai3/zhenai2012/skin/public/main-nav-bg.png*/ repeat scroll 0 0; height: 48px;}
+.top_960{ width:1000px; margin:0 auto; overflow:hidden;}
+
+.top_960 .logo{ width: 80px;overflow:hidden; height:40px; background: url(logo-1.png)/*tpa=http://i1.zastatic.com/zhenai3/zhenai2012/skin/public/logo.png*/ no-repeat; margin-top: 6px; float: left; _background: 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://i4.zastatic.com/zhenai3/zhenai2012/skin/public/logo.png')}
+
+.top_960 .logo a { display: block; height:40px; width:80px;}
+
+.top_960 .shoujiBox{ float: left; margin-left: 370px; margin-top: 12px; width: 460px;}
+.top_960 .shoujiBox a { color: #FFFFFF; font-size: 14px;}
+.top_960 .shoujiZaIcon{ background: url("shoujiZaIcon.jpg")/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/bltyapp/shoujiZaIcon.jpg*/ no-repeat scroll 0 0; margin-right: 115px; padding-left: 20px;}
+.top_960 .kehuduanIcon{ background: url("kehuduanIcon.jpg")/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/bltyapp/kehuduanIcon.jpg*/ no-repeat scroll 0 0; margin-right: 115px; padding-left: 22px;}
+.top_960 .bltyIcon{background: url("bltyIcon.jpg")/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/bltyapp/bltyIcon.jpg*/ no-repeat scroll 0 0; padding-left: 20px;}
+
+.centerBg2014{ width:100%; height:527px; background:url(centerBg2014.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/centerBg2014.jpg*/ no-repeat center;}
+.Box1000{ width:1000px;  height:527px; margin:0 auto; position:relative;}
+.Box1002{ width:1000px; height:325px;  margin:0 auto; position:relative;}
+.rightBox{ width:522px; float:right; overflow:hidden;}
+.rightBox .rigTxt01{ width:355px; height:50px; background:url(rigTxt01.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/rigTxt01.png*/ no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i9.zastatic.com/zhenai3/images/newUI/wappublicity/rigTxt01.png'); _background-image:none;  margin-top:118px; margin-bottom:50px;}
+.rightBox .rigTxt02{ width:305px; height:33px; background:url(rigTxt02.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/rigTxt02.png*/ no-repeat;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i9.zastatic.com/zhenai3/images/newUI/wappublicity/rigTxt02.png'); _background-image:none;}
+.rightBox .rigTxt03{ font-size:16px; font-family:"Î¢ÈíÑÅºÚ"; color:#000; margin-top:5px;}
+
+.btncodeBox{ overflow:hidden; margin-top:15px;}
+.btniim{ width:265px; float:left;}
+.btniim .app_store{ width:203px; height:65px; background:url(app_store.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/app_store.png*/ no-repeat;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i9.zastatic.com/zhenai3/images/newUI/wappublicity/app_store.png'); _background-image:none; display:block; margin-top:18px; margin-bottom:38px; position:relative; cursor:pointer;text-indent:-999999px;} 
+.btniim .app_android{ width:203px; height:65px; background:url(app_android.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/app_android.png*/ no-repeat; display:block;  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i9.zastatic.com/zhenai3/images/newUI/wappublicity/app_android.png'); _background-image:none; cursor:pointer;text-indent:-999999px;}
+
+.codeImg{ width:155px; height:186px; background:url(codeImg.png-v=20150205.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/codeImg.png?v=20150205*/ no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i9.zastatic.com/zhenai3/images/newUI/wappublicity/codeImg.png?v=20150205'); _background-image:none; float:left;}
+.btm_uuk{ overflow:hidden;width:410px; float:right; margin-right:110px; margin-top:10px; display:inline; height:98px;}
+.btm_uuk .dxxz{ font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; padding-left:15px;}
+.btm_uuk .shuruBox{ overflow:hidden; margin-top:10px; margin-bottom:5px; height:40px;}
+.btm_uuk .srhm{ width:273px; height:20px; background:url(srhm.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/srhm.jpg*/ no-repeat; border:none; float:left; padding:10px 0 10px 10px; font-size:16px;}
+.btm_uuk .ljhqBtn{ width:113px; height:40px; background:url(ljhqBtn.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/ljhqBtn.jpg*/ no-repeat; display:inline-block; float:left; margin-left:10px;}
+.btm_uuk .xzdd{ font-size:14px; font-family:"Î¢ÈíÑÅºÚ"; color:#f60; padding-left:10px;}
+/*
+.phoneBox{ width:296px; height:635px; background:url(../../images/newUI/wappublicity/phoneBox.jpg) no-repeat; position:absolute; top:50px; left:0px;}
+.phoneBox .bannerBox{width:257px; height:382px; margin:100px auto 0; overflow:hidden;}
+*/
+.banner01{ width:257px; height:382px; background:url(bn1.jpg-v=20150205.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/bn1.jpg?v=20150205*/ no-repeat;}
+.banner02{ width:257px; height:382px; background:url(bn2.jpg-v=20150205.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/bn2.jpg?v=20150205*/ no-repeat;}
+.banner03{ width:257px; height:382px; background:url(bn3.jpg-v=20150205.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/bn3.jpg?v=20150205*/ no-repeat;}
+.banner04{ width:257px; height:382px; background:url(bn4.jpg-v=20150205.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/bn4.jpg?v=20150205*/ no-repeat;}
+
+.phoneBox{ width:450px; height:676px; background:url(phoneBoxtt.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/phoneBoxtt.jpg*/ no-repeat; position:absolute; top:50px; left:-44px;}
+.phoneBox .bannerBox{width:257px; height:382px; margin:100px 0 0 65px; overflow:hidden;}
+
+
+.greyBg2014{ width:100%; height:325px; background:url(gray_repeat_xx.jpg)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/gray_repeat_xx.jpg*/ no-repeat center;}
+
+
+.updatebox{  color:#6a6a6a; clear:both; padding-top:35px;padding-left:25px;font-size:13px;}
+.footbox{ text-align:center; color:#6a6a6a; clear:both; padding-top:65px;}
+.footbox a{color:#6a6a6a;}
+.footbox p{ color:#949494;}
+
+/*20141113*/
+.app_download a,.app_download a i,.app_download a span,.appDownload-layer .appTab li,.appDownload-layer .appBox .ewCode span{ background: url(app_icon.png-123.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/app_icon.png?123*/ no-repeat;}
+.top_960 .app_download{ float: right; margin-top: 10px;}
+.app_download a{ position: relative; zoom:1; float: left; display: inline; height: 24px; padding-left:32px; background-position: -103px -439px; margin-left: 10px; cursor:pointer;}
+.app_download a:hover{ text-decoration:none;}
+.app_download a span{ display: inline-block; height: 100%; line-height: 24px; padding-right: 16px; background-position: right -439px; color: #30a5ff; font-size: 14px;}
+.app_download a i{ position: absolute; width: 16px; height: 16px; left: 16px; top: 4px;}
+.app_download a i.ios_icon{ background-position: 0 -448px;}
+.app_download a i.android_icon{ background-position: -16px -448px;}
+.appDownload-layer{ position:relative; width:706px; background-color: #fff;}
+.appDownload-layer .close{ position:absolute; right:0; top:0; width:22px; height:22px;}
+.appDownload-layer .appTab{ padding: 25px 0; text-align: center;}
+.appDownload-layer .appTab li{ display: inline-block; width: 149px; height: 149px; margin: 0 30px; cursor: pointer; *display: inline; zoom:1;}
+.appDownload-layer .appTab .app_ipad{ background-position: 0 0;}
+.appDownload-layer .appTab .app_ipad_on{ background-position: 0 -151px;}
+.appDownload-layer .appTab .app_android{ background-position: -151px 0;}
+.appDownload-layer .appTab .app_android_on{ background-position: -151px -151px;}
+.appDownload-layer .appBox{ position: relative; background-color: #FDF9F0; height: 300px; zoom:1;}
+.appDownload-layer .appItems{ display: none;}
+.appDownload-layer .appBox .app_btn{ position: absolute; left: 118px; top: 108px; width:203px; height:65px;}
+.appDownload-layer .appBox .app_store{ background:url(app_store.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/app_store.png*/ no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i9.zastatic.com/zhenai3/images/newUI/wappublicity/app_store.png'); _background-image:none;}
+.appDownload-layer .appBox .app_android{ background:url(app_android.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/app_android.png*/ no-repeat; display:block; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i9.zastatic.com/zhenai3/images/newUI/wappublicity/app_android.png'); _background-image:none;}
+.appDownload-layer .appBox .ewCode{ position: absolute; top: 52px; right: 140px; width: 135px; padding: 10px 10px 0 10px; background-color: #666;}
+.appDownload-layer .appBox .ewCode span{ display: block; width: 135px; height: 135px; background-position: 0 -302px;}
+.appDownload-layer .appBox .ewCode p{ height: 36px; line-height: 36px; text-align: center; color: #fff; font-family: 'Microsoft Yahei';}
+.appDownload-layer .close{ position: absolute; right: -12px; top: -12px; width: 28px; height: 28px; background:url(close.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/close.png*/ no-repeat; _background-image:url(close_ie.png)/*tpa=http://i1.zastatic.com/zhenai3/images/newUI/wappublicity/close_ie.png*/;}
+
+
+
+
+.rigTxt01 h1{
+	display:none;
+}

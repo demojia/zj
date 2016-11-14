@@ -1,0 +1,109 @@
+@charset "utf-8";
+/*  当天首次发送秋波成功 弹层*/
+.popmod{ padding:12px 15px; color:#3C3C3C; display:none;}
+.popmod h3{font-size:14px; padding-bottom:8px;}
+.popmod h3 a{ float:right; font-weight:normal; font-size:12px; color:#00f;}
+.popmod .orange_box{background:#fefbf6; border:1px solid #f3dab0; padding:6px;}
+.popmod .prerogative{ float:left; width:209px; height:145px; background:url(../../img/layer/success_mod/prerogative_xinshi.jpg) no-repeat;}
+.popmod .ative_right{ float:left; width:270px; padding-left:42px; padding-top:15px;}
+.popmod .ative_right ul{margin-bottom:15px;}
+.popmod .ative_right ul li{ font-size:14px; margin-bottom:5px;}
+.popmod .ative_right ul li label,input{ vertical-align:middle;}
+.popmod .msg_sample{color:#8b8b8b; background:#eee; padding:6px 8px; margin:12px 0;}
+
+/*  用户列表 */
+.popmod .mail_title { padding:30px 0; text-align:center;}
+.popmod .mail_title span { display:inline-block; zoom:1; _display:inline; padding-left:35px; line-height:30px; font-size:14px; font-weight:bold; color:#f60; background:url(../../img/public/icon/middle/success.png) no-repeat;}
+.popmod .user_items_box{ width:660px; overflow:hidden;}
+.popmod .loading{ background:url(../../img/layer/success_mod/loadinfo.gif) no-repeat center 50px;}
+.popmod .user_items_box .user_items{ width:700px;/* height:208px;*/}
+.popmod .user_items_box .user_items li{float:left;/* margin-right:40px;*/ text-align:center; width:100px;}
+.popmod .user_items_box .user_items .user_photo{ position: relative; width:100px; height:125px; padding-bottom:12px; background:url(../../img/layer/success_mod/user_photo_bg.jpg) no-repeat left bottom;}
+.popmod .user_items_box .user_items .user_photo img{ display:block; width:100px; height:125px;}
+.popmod .user_items_box .user_items .user_photo input { position:absolute; bottom:12px; right:0;}
+.popmod .user_items_box .user_items .sayhi{  background:url(../../img/layer/success_mod/right_icon.png) no-repeat center center; height:28px;}
+.popmod .user_items_box .user_items li .btn_A{ padding:0; text-align:center; width:100px;}
+.popmod .bottom_act{ text-align:center; padding:20px 0 10px 0;}
+.popmod .user_items_box .user_items .icon_zxmember,.popmod .user_items_box .user_items .icon_zxmember_year{position:relative;bottom:-3px;left:-2px;*bottom:0;}
+
+/* 试点秋波成功推荐 */
+.popmod_beta .user_items_box{ width:680px; overflow:hidden;}
+.popmod_beta .user_items_box .user_items{margin-right:-40px; width:720px; height:208px;}
+.popmod_beta .user_items_box .user_items li{float:left; margin-right:32px; zoom:1; *display:inline; text-align:center; width:86px; padding-bottom:10px;}
+.popmod_beta .user_items_box .user_items .user_photo{ position: relative; width:80px; height:100px; padding:3px 3px 8px; background:url(../../img/myhome/avatar_shadow_80.gif) 50% 100% no-repeat #fff;}
+.popmod_beta .user_items_box .user_items .user_photo img{ display:block; width:80px; height:100px;}
+.popmod_beta .user_items_box .user_items .user_photo input { position:absolute; bottom:5px; right:0;}
+
+/*  当天非首次发送秋波成功 弹层*/
+.popmod .pink_box{ height:173px; padding:15px; background:url(../../img/layer/success_mod/pink_box.png) no-repeat; margin-bottom:10px;}
+.popmod .pink_box .left_wrap{float:left; width:320px; text-align:center;}
+.popmod .pink_box .left_wrap p{ padding:0 20px 0 95px; background:url(../../img/layer/success_mod/mobile_icon.png) no-repeat left center; text-align:left; height:126px; color:#4c90ba;word-break:break-all; word-wrap:break-word;}
+.popmod .pink_box .right_wrap{float:left; width:300px; text-align:center; border-left:1px dashed #e1e0e0;}
+.popmod .pink_box .right_wrap p{ padding:20px 20px 0 112px; background:url(../../img/layer/success_mod/identity_icon.png) no-repeat 15px center; text-align:left; height:106px; color:#d63c93;}
+.popmod .pink_box .btn_pink_L{ font-weight:400;}
+.popmod .pink_box .right_wrap .btn_pink_L{ padding:0 18px;}
+
+/*  发送问问成功 弹层*/
+.popmod .pink_box_2{ height:112px; width:625px; padding:15px; background:url(../../img/layer/success_mod/pink_box02.png) no-repeat; margin-bottom:10px;}
+.popmod .pink_box_2 p{ padding:16px 20px 20px 130px; background:url(../../img/layer/success_mod/identity_icon.png) no-repeat 15px 8px; color:#d63c93;}
+.popmod .pink_box_2 p .btn_pink_L{ margin-top:5px; padding:0 18px; font-weight:400;}
+
+/*  联系请求成功  弹层*/
+.popmod .contact_list{ padding:10px;}
+.popmod .contact_list .left_wrap{ display:inline; float:left; width:300px; margin-left:30px; padding-top:100px;  background:url(../../img/layer/success_mod/tel.png) no-repeat left 6px; font-weight:bold; font-size:14px;}
+.popmod .contact_list .right_wrap{ display:inline; float:left; width:250px; margin-left:30px; padding-top:92px;  background:url(../../img/layer/success_mod/hongnian.png) no-repeat;}
+.popmod .contact_list .right_wrap .btn_pink_L{ padding:0 20px; margin-left:68px;}
+.popmod .contact_list .right_wrap .btn_gray_L{  margin-left:68px; cursor:default;}
+
+/*  设置名片  弹层*/
+.popmod .yellow_box{ padding:10px 5px 10px 42px; background:#feffdf url(../../img/layer/success_mod/warn_icon.png) 5px center no-repeat; border:1px solid #fae683; width:625px; margin-bottom:15px; color:#b87500;}
+.popmod .from_box{ font-size:14px;}
+.popmod .from_box .from_item{ padding:5px 0; line-height:26px;}
+.popmod .from_box .from_item label{ float:left; width:78px;}
+.popmod .from_box .from_item .wrong_tips{ font-size:12px; color:#f00; margin-left:10px; }
+.popmod .from_box .from_item .txt_input{ float:left; margin:0; padding:2px 3px; height:22px; line-height:22px; width:210px;}
+.popmod .from_box .from_item .upload_img{ opacity:0; filter:alpha(opacity=0); width:200px; height:50px; position:absolute; top:0; right:0; cursor:pointer;}
+.popmod .from_box .from_item .upload_wrap{ background:url(../../img/layer/success_mod/btn_upload.png) no-repeat; display:inline-block; width:68px; height:28px; overflow:hidden; margin-left:10px; position:relative; cursor:pointer;}
+.popmod .from_box .from_item .msg_cnt{ float:left; color:#750000; font-size:12px; margin-left:20px;}
+.popmod .from_box .from_item textarea{ width:550px; height:100px; resize:none; padding:5px;}
+.popmod .from_box .from_item p{color:#8b8b8b;}
+.popmod .from_box .from_item .textarea_wrap{ float:left;}
+
+/*  投诉  弹层*/
+.popmod .from_box .from_item .textarea_wrap .btn_orange_M{ margin-top:10px;}
+.popmod .from_box .from_item .select_report{height:30px; width:220px; padding:5px 0; float:left;}
+.popmod .from_box .report_notice{ font-size:12px;}
+.popmod .from_box .report_notice ul{ float:left; color:#8b8b8b;}
+
+/*  发送秋波   发送问问   弹层*/
+.popmod .ask_items{ width:700px; font-size:14px;}
+.popmod .ask_items .ask_item{ display:block; padding:0 5px; color:#3c3c3c; height:30px; line-height:30px; margin-bottom:4px; position:relative; cursor:pointer;}
+.popmod .ask_items .asked_item{ display:block; padding:0 5px; height:30px; line-height:30px; margin-bottom:4px; position:relative; cursor:pointer; color:#8b8b8b; }
+.popmod .ask_items .asked_item:hover{ text-decoration:none;}
+.popmod .ask_items .ask_item .ask_radio, .popmod .ask_items .ask_item .ask_checkbox,  .popmod .ask_items .asked_item .ask_checkbox{ margin:0 6px 0 0; vertical-align:middle;}
+.popmod .ask_items .ask_item .ask_msg{ display:inline-block; vertical-align:middle;}
+.popmod .ask_items .ask_item:hover, .popmod .ask_items .ask_selected{ background:#f2f8fc; color:#3c3c3c; text-decoration:none;}
+.popmod .ask_items i{ position:absolute; right:8px; top:0; line-height:30px; height:30px; font-style:normal; font-size:12px; display:none;}
+.popmod .ask_items .asked_item:hover{color:#8b8b8b; background:none;}
+.popmod .ask_items .asked_item i{ display:block;}
+.popmod .ask_act{ padding:10px 0 10px 22px;}
+.popmod .ask_act .change_group{ float:right;}
+
+a{color:#007bc2;}
+.c_f60{ color:#f60;}
+#question_pop .ask_items{ width:600px;}
+
+/* 发送秋波成功 */
+.popmod .m_success{ height:27px; line-height:27px; margin: 10px 0 20px 0; text-align: center;}
+.popmod .m_success strong{ display: inline-block; height:27px; padding-left:33px; background:url(../../img/public/icon/middle/success.png) no-repeat 0 0; font-size:14px; color:#ff5a00;}
+
+.popmod .user_items_box{ width:696px; overflow:hidden;}
+.popmod .user_items_box .user_items{ width:782px;}
+.popmod .mail_title{ padding:15px 0;}
+.popmod .user_items_box .user_items .user_photo img{ width:80px; height:100px;}
+.popmod .user_items_box .user_items .user_photo{ position: relative; width:80px; height:100px; padding-bottom:12px; background:url(../../img/layer/success_mod/user_photo_bg_02.jpg) no-repeat left bottom;}
+.popmod .user_items_box .user_items li{ margin-left:15px; display:inline;}
+.popmod h3{ margin-left:20px;}
+#changeMember{ margin-right:25px;}
+.popmod .user_items_box .clea{clear:both;}
+.popmod .bottom_act{ clear:both;}

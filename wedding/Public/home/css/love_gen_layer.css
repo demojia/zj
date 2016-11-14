@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*珍心会员弹层07-11*/
+.zxPop{  width:608px; height:412px; overflow:hidden; background:url(../images/box_bg.png) no-repeat; }
+.zxPop .zxPopTitle{ position:relative; padding:25px 0 0 0; width:100%; height:35px; line-height:35px; color:#3c3c3c; text-indent:12px;}
+.zxPop .zxPopTitle,.zxPop h1.zxPopH1,.zxPopAll font,.zxPopLeft h2,.zxPopRight h2,.zxInfor font{ font-size:14px; font-weight:bold; }
+.zxPop .zxPopTitle span.zxPopTitleText{ float:left; padding-left:6px; }
+.zxPop .zxPopTitle font.zxUserName,.zxPop h1.zxPopH1,.zxPopAll font,.zxInfor font,.zxPop .zxCheck a:hover{ color:#ff6600; }
+.zxPop .zxPopTitle a.zxbtnClose{ position:absolute; right:8px; top:6px;  display:block; width:22px; height:22px; font-size:0; line-height:0;  background:url(../images/btn_close.gif) center center no-repeat; text-indent:-9999px; }
+.zxPop .zxPopTitle a.zxbtnClose:active{ top:7px;}
+.zxPop h1.zxPopH1{ width:100%; height:63px; margin-top:15px; line-height:63px; text-indent:230px; background:url(../images/icon_courier.gif) no-repeat 120px center; font-size:14px; }
+.zxPop h1.zxPopH2{ padding-left:156px; padding-top:15px; height:48px; margin-top:15px; line-height:; background:url(../images/warning.png) no-repeat 120px center; font-size:14px; }
+.zxPop h1.zxPopH2 a { color:#007bc2; text-decoration:underline;}
+
+.zxPop .zxPopMain{ width:507px; height:238px; margin-top:20px; margin-left:18px; padding:10px 23px 0px 23px; overflow:hidden; background:url(../images/bg_pop.jpg) no-repeat top center; }
+.zxPop .zxPopAll{ width:100%; height:33px; line-height:33px; text-indent:20px; border-bottom:1px dotted #868686; }
+.zxPop .zxPopCon{ width:100%; margin-top:12px; }
+.zxPop .zxPopLeft,.zxPopRight{ float:left; width:210px; padding:0px 20px; overflow:hidden; line-height:36px; }
+.zxPop .zxPopLeft h2,.zxPopRight h2{ color:#6e3e39; font-size:14px; }
+.zxPop .zxPopLeft{ border-right:1px dotted #868686; }
+.zxPop .zxInfor{ float:left; width:180px;  overflow:hidden; }
+.zxPop .zxCheck{ float:right; width:25px; overflow:hidden; }
+.zxPop .zxCheck a{ color:#007bc2; }
+
