@@ -129,7 +129,7 @@ body { position: relative; }
 .mod-brief-info { height: 480px; padding: 20px; }
 .mod-brief-info .to-one { display: inline-block; top: 0; right: 0; width: 105px; height: 80px; background: url('../images/to-one_8593f70.png') 0 0 no-repeat; }
 .mod-brief-info .to-one a { display: inline-block; }
-.mod-brief-info .photo-album { display: inline; width: 300px; height: 468px; margin-left: 15px; border: 1px solid #e0e0e0; background: url('../images/bg_04e3409.png') 0 -4px repeat-x; }
+.mod-brief-info .photo-album { display: inline; width: 300px; height:300px; margin-left: 15px; border: 1px solid #e0e0e0;  }
 .mod-brief-info .brief-top,
 .mod-brief-info .brief-center,
 .mod-brief-info .brief-bottom { margin-left: 360px; zoom: 1; }

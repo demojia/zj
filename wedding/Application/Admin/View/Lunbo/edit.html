@@ -1,0 +1,9 @@
+<extend name="Moduel/index"/>
+<block name="main">
+	<form enctype="multipart/form-data" method="post" action="<{:U('Lunbo/doedit')}>">
+		<input type="hidden" name="id" value="<{$data.id}>">
+		<input type="file" name='pic'>
+		<input type="submit" value="修改图片">
+	</form>
+
+</block>

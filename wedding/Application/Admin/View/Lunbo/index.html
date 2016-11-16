@@ -1,0 +1,81 @@
+<extend name="Moduel/index"/>
+<block name="main">
+
+<div style="height:700px">
+  
+<!-- <form action="" method="post" enctype="multipart/form-data">
+  <input type="file" name="pic">
+  <input type="submit" value="修改轮播图">
+</form> -->
+
+<div style="width:960px;height:80px;background:#feeeed;">
+轮播图片管理 【<a href="<{:U('Lunbo/add')}>">添加轮播图片</a>】<br/>
+当前共计<span style="font-size:20px;color:#ff00ff"><{$countpic}></span>张图片
+</div>
+<div class="container">
+<table class="table table-hover mt20">
+
+  <thead>
+ 
+    <tr >
+      <th class="col-md-3">图片名</th>
+      <th class="col-md-3">图片路径</th>
+      <th class="col-md-3">预览</th>
+      <th class="col-md-3">编辑</th>
+   </tr>
+    
+  </div>
+  </thead>
+  <tbody>
+    <foreach name="data" item="v">
+    <tr>
+      <td><{$v.pic}></td>
+      <td><{$v.path}></td>
+      <td><img src="__PUBLIC__/lunbo/<{$v.s_pic}>"></td>
+      <!-- <td><img src="__PUBLIC__/lunbo/<{$v.pic}>"></td> -->
+      <script type="text/javascript">
+
+       //  var look=document.getElementsByTagName('button');
+       //  var pict=document.getElementsByClassName('pic');
+       //  for(var i=1;i<look.length;i++)
+       //  {
+       //    (function(i){
+       //      look[i].onmouseover=function(){
+
+       //    document.getElementById('pic').innerHTML="<img src='__PUBLIC__/lunbo/<{$v.pic}>'/>";
+       //    document.getElementById('pic').style.display="block";
+       //  console.log(pict);
+       //    console.log('<{$v.pic}>');
+       //      }
+       //    })(i);
+
+
+       //    (function(i){
+       //      look[i].onmouseout=function(){
+
+       //    document.getElementById('pic').innerHTML="";
+       //    document.getElementById('pic').style.display="none";
+          
+       //      }
+       //    })(i);
+       // }
+      
+      </script>
+      
+      <td>
+        <a href="<{:U('Lunbo/edit',array('id'=>$v['id']))}>" class="btn btn-primary">编辑</a>
+        <a href="<{:U('Lunbo/del',array('id'=>$v['id']))}>" class="btn btn-danger">删除</a>
+      </td>
+    </tr>
+     </foreach>
+
+
+  </tbody>
+</table>
+</div>
+</div>
+
+
+</div>
+</block>
+

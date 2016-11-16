@@ -1,0 +1,69 @@
+*{margin:0;
+padding:0;
+list-style:none;
+}
+
+#playbox{
+	margin:0 auto;
+	width:800px;
+	height:300px;
+	position:relative;
+}
+
+#playbox img{
+	display: none;
+	margin：0 auto;
+}
+
+#icon{
+	position:absolute;
+	right:20px;
+	bottom:10px;
+}
+
+#icon li{
+	float:left;
+	border-radius:50%;
+	width:6px;
+	height:6px;
+	margin-right:6px;
+	border:1px solid #999;
+
+}
+
+#icon li:hover{
+	background: white;
+
+}
+
+.current{
+	background: white;
+}
+
+#right{
+	width:41px;
+	height:69px;
+	position: absolute;
+	top:40%;
+	right:0;
+	background: url('./1-r.png') no-repeat -124px 0;
+
+}
+
+#right:hover{
+	background:url('./1-r.png') no-repeat -41px 0;
+}
+
+#left{
+	width:41px;
+	 height:69px;
+	 position: absolute;
+	 top: 40%;
+	 left: 0;
+	 background:url('./l-r.png') no-repeat -83px 0;
+}
+
+#left:hover{
+	background: url('./l-r.png') no-repeat 0 0;
+		
+		}

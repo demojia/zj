@@ -3,11 +3,11 @@
 	namespace Home\Controller;
 	use Think\Controller;
 
-	class RegisterController extends Controller
+	class RegisterController extends EmptyController
 	{
 		public function index()
 		{
-		
+			$this->assign('title','珍爱注册');
 			$this->display();
 		}
 

@@ -3,7 +3,7 @@
 	namespace Home\Controller;
 	use Think\Controller;
 
-	class LoginController extends Controller
+	class LoginController extends EmptyController
 	{
 		public function index()
 		{

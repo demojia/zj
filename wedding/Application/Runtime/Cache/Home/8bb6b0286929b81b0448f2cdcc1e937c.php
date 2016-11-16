@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 
-<title>珍爱网注册_免费注册珍爱网</title>
+<title><?php echo ($title); ?></title>
 
 <link rel="stylesheet" href="/wedding/Public/home/register/entry.css-v=20150831.css" />
 <link href="/wedding/Public/home/register/login.css-v=20131224.css"  type="text/css" charset="UTF-8"/>
@@ -46,8 +46,22 @@
 				<input type="radio" value='0' name='sex' checked>女&nbsp;&nbsp;&nbsp;
 				<input type="radio" value='1' name='sex'>男
 			</div><br>
+			<div class="col-form">
+				<label>我的年龄:</label>
+				<input type="text" id='age' name='age'  style="height:30px;width:160px">
+
+			</div>
+			<br>
+
+			<div class="col-form">
+				<label>我的星座:</label>
+				<input type="text" id='xingzuo' name='xingzuo'  style="height:30px;width:160px">
+
+			</div>
+			<br>
 			
 			<div class="col-form">
+				
 				<label>我的生日：</label>
 				<input type="text" id='birthday' name='birth' placeholder="如：1996-01-22" style="height:30px;width:160px">
 			</div><br>
@@ -104,7 +118,7 @@
 			<div class="col-form">
 				<label>我的身高：</label>
 				<select name="height" id="Yheight" style="height:30px;width:160px">
-					<?php $__FOR_START_22342__=150;$__FOR_END_22342__=210;for($i=$__FOR_START_22342__;$i < $__FOR_END_22342__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?>cm</option><?php } ?>
+					<?php $__FOR_START_5258__=150;$__FOR_END_5258__=210;for($i=$__FOR_START_5258__;$i < $__FOR_END_5258__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?>cm</option><?php } ?>
 				</select>
 				
 		
@@ -116,7 +130,15 @@
 				
 			</div>
 			<br>
+
 			<!-- 我的手机号 }-->
+
+			<div class="col-form">
+				<label>我的工作：</label>
+				<input type="text" name="job" id="job" style="height:30px;width:160px"/>
+				
+			</div>
+			<br>
 			<div class="col-form">
 				<label>创建密码：</label>
 				<input  placeholder="请输入密码" type="password" name="pass" id="pass" style="height:30px;width:160px"/>
@@ -186,12 +208,34 @@ var zaeducation=false;
 var zabirth=false;
 var zapro=false;
 var zacity=false;
+var zaage=false;
+var zajob=false;
+var zaxing=false;
 
 
 // 验证手机号
 $("#phone").blur(function(){
 	$("#phone+p").remove();
 	checkTel(this);
+	$(this).after(msg);
+});
+
+$("#xingzuo").blur(function(){
+	$("#xingzuo+p").remove();
+	checkXing(this);
+	$(this).after(msg);
+});
+
+$("#job").blur(function(){
+	$("#job+p").remove();
+	checkJob(this);
+	$(this).after(msg);
+});
+
+
+$('#age').blur(function(){
+	$('#age+p').remove();
+	checkAge(this);
 	$(this).after(msg);
 });
 
@@ -225,6 +269,36 @@ $('#city').blur(function(){
 	$(this).after(msg);
 });
 
+function checkAge(obj)
+{
+	msg='';
+	if($(obj).val().length==0){
+		msg='<p>年龄必填呦</p>';
+	}else{
+		zaage=true;
+	}
+}
+
+function checkXing(obj)
+{
+	msg='';
+	if($(obj).val().length==0){
+		msg='<p>星座必填呦</p>';
+	}else{
+		zaXing=true;
+	}
+}
+
+
+function checkJob(obj)
+{
+	msg='';
+	if($(obj).val().length==0){
+		msg='<p>职业必填呦</p>';
+	}else{
+		zajob=true;
+	}
+}
 
 function checkPro(obj)
 {
@@ -305,7 +379,7 @@ function checkRepass(obj)
 
 function checkinputAll(){
 
-	if(zapro&&zacity&&zabirth&&zaphone&&zapass&&zarepass){return true;}else{return false;}
+	if(zapro&&zacity&&zabirth&&zaphone&&zapass&&zarepass&&zaage){return true;}else{return false;}
 }
 
 var yz_img=$('#yz_img');

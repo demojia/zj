@@ -46,7 +46,7 @@ if ( domWidth<1200 ) {
 				<li><a href="/offline/serviceIntroduce.do">他她说</a></li>
 				<li><a href="/offline/handsomes.do" rel="nofollow">优质会员</a></li>
 				<li><a href="/offline/loveStoryIndex.do" rel="nofollow">成功故事</a></li>
-				<!-- <li><a href="/offline/hnIndex.do">红娘风采</a></li> -->
+				<li><a href="<{:U('Personal/index')}>">个人中心</a></li>
 				
 				<?php
 				if($_SESSION['user']['phone'])
@@ -68,8 +68,12 @@ if ( domWidth<1200 ) {
 	    <!--焦点图-->
 		<div class="g-slide">
 			<ul class="g-slide-wrapper">
-				<li style="display: block"><a style="background-image:url(__PUBLIC__/home/images/banner01.jpg);"></a></li>
-				<li><a style="background-image:url(__PUBLIC__/home/images/banner02.jpg);"></a></li>
+
+			<foreach name="list" item="val">
+				<li style="display: block">
+				<a style="background-image:url(__PUBLIC__/lunbo/<{$val.pic}>);"></a>			
+				<a style="background-image:url(__PUBLIC__/lunbo/<$val.pic}>);"></a></li>
+			</foreach>
 			</ul>
 			<!-- 页码 -->
 			<div class="g-slidebox">
@@ -83,12 +87,7 @@ if ( domWidth<1200 ) {
 		</div>
 		<!--焦点图 end-->
 
-	    <div class="bannerTxt">
-	    	<div class="bannerTxt-1">
-	    		<p><i></i>红娘热线：15806181820</p>
-	    		<a href="JavaScript:;" class="btnR2 btn-apply" source="101">申请服务</a>
-	    	</div>
-	    </div>
+
 	</article>
 	<article class="ol-wrap1">
 		<section class="frameW">
@@ -670,25 +669,45 @@ if ( domWidth<1200 ) {
 <footer class="footer">
     <div class="frameW clearfix">
         <div class="about">
-            <div class="quick"><a target="_blank" href="http://about.zhenai.com/" rel="nofollow">关于我们</a>|<a target="_blank" href="http://tv.zhenai.com/MeiTiGuanZhu/index.x" rel="nofollow">媒体关注</a>|<a target="_blank" href="http://contact.zhenai.com/" rel="nofollow">联系我们</a>|<a target="_blank" href="http://www.zhenai.com/job/" rel="nofollow">加入我们</a>|<a target="_blank" href="http://about.zhenai.com/huoban" rel="nofollow">合作伙伴</a>|<a target="_blank" href="http://profile.zhenai.com/personal/getguestbookbegin.jsps" rel="nofollow">意见反馈</a>|<a href="http://lj.zhenai.com/96333partner/media/safety/safetyGuide.jsp" target="_blank" rel="nofollow">安全征婚</a>|<a href="http://www.zhenai.com/sitemap.html" target="_blank">网站地图</a></div>
-            <div class="brand grayL"><span>品牌：11年专业婚恋服务</span>&nbsp;&nbsp;<span>专业：庞大的资深红娘队伍</span>&nbsp;&nbsp;<span>真实：诚信会员验证体系</span></div>
-            <div class="contact grayL"><span>客服热线：4001-520-520（周一至周日：9:00-21:00）</span><span>客服信箱：kefu@zhenai.com</span></div>
-            <div class="contact grayL"><span><a style="color:#9f9f9f;" href="http://profile.zhenai.com/v2/sys/reportEntry.do" target="_blank" rel="nofollow">违法和不良信息举报</a></span>&nbsp;&nbsp;<span>违法和不良信息举报专线：4008829288</span>&nbsp;&nbsp;<span>举报信箱：<a style="color: #9f9f9f;" href="mailto:jubao@zhenai.com" class="underlines" rel="nofollow">jubao@zhenai.com</a></span></div>
+            <div class="quick">
+            <a href="javascript:;">关于我们</a>|
+            <a href="javascript:;" rel="nofollow">媒体关注</a>|
+            <a href="javascript:;">联系我们</a>|
+            <a href="javascript:;">加入我们</a>|
+            <a href="javascript:;">合作伙伴</a>|
+            <a href="javascript:;">意见反馈</a>|
+            <a href="javascript:;">安全征婚</a>|
+            <a href="javascript:;">网站地图</a>
+            </div>
+            <div class="brand grayL"><span>品牌：11年专业婚恋服务</span>&nbsp;&nbsp;
+            <span>专业：庞大的资深红娘队伍</span>&nbsp;&nbsp;
+            <span>真实：诚信会员验证体系</span>
+            </div>
+            <div class="contact grayL">
+            <span>客服热线：4001-520-520（周一至周日：9:00-21:00）</span>
+            <span>客服信箱：kefu@zhenai.com</span>
+            </div>
+            <div class="contact grayL">
+            <span><a style="color:#9f9f9f;" href="">违法和不良信息举报</a>
+            </span>&nbsp;&nbsp;
+            <span>违法和不良信息举报专线：4008829288</span>&nbsp;&nbsp;
+            <span>举报信箱：<a style="color: #9f9f9f;" href="" class="underlines">jubao@zhenai.com</a></span>
+            </div>
         </div>
         <div class="copyright grayL">
         	<p>Copyright &copy; 2005-2016 版权所有：深圳市珍爱网信息技术有限公司<br>增值电信业务经营许可证粤B2-20040382号 粤ICP备09157619</p>
         	<div class="out-link">
-            	<a target="_blank" title="深圳网警备案" href="http://szgabm.qq.com/" class="link2" rel="nofollow"></a>
-            	<a target="_blank" title="国际联网备案" href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403301900797" class="link1" rel="nofollow"></a>
-            	<a title="深圳举报中心" href="http://szwljb.gov.cn/" class="link6" target="_blank"  rel="nofollow"></a>
-                <a title="违法和不良信息举报中心" href="http://www.12377.cn/" class="link3" target="_blank"  rel="nofollow"></a>  
-                <a title="诚信示范网站" href="https://search.szfw.org/cert/l/CX20150630010588010670" class="link4" target="_blank" rel="nofollow"></a>
-                <a title="AAA级信用企业" href="http://www.itrust.org.cn/Home/Index/itrust_certifi?wm=1761973720" class="link7" target="_blank" rel="nofollow"></a>
+            	<a title="深圳网警备案" href="javascript:;" class="link2"></a>
+            	<a title="国际联网备案" href="javascript:;" class="link1"></a>
+            	<a title="深圳举报中心" href="javascript:;" class="link6"></a>
+                <a title="违法和不良信息举报中心" href="javascript:;" class="link3"></a>  
+                <a title="诚信示范网站" href="javascript:;" class="link4"></a>
+                <a title="AAA级信用企业" href="javascript:;" class="link7"></a>
             </div>
         </div>
     </div>
 </footer>
-<!-- 尾部 end -->
+<!-- 尾javascript:;部 end -->
 	<script src="__PUBLIC__/home/js/jquery-1.8.3.min_e128811.js"></script>
 	<script>
 	$LAB.script("http://i3.zastatic.com/zhenai3/zhenai2015/js/lib/slide.min_aeda8e8.js")
