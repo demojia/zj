@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.box_900 { background:url(../images/zhong900_3.gif) repeat-y 0 0; width:900px; margin:0 auto }
+.box_900_b { background:url(../images/di900_3.gif) no-repeat 0 0; height:10px; overflow:hidden }
+.box_900 .box_900_t { color:#0059B4; background:url(../images/titlebg_900.gif) no-repeat 0 0; overflow:hidden; zoom:1; height:46px; line-height:46px; }
+.box_900 .box_900_t .title { font-family: "微软雅黑"; font-size:14px; padding-left:20px; float:left; }
+.box_900 .box_900_t .more_link { float:right; padding-right:12px; color:#0059B4; }
+.box_900 .box_900_t .tabs { position:relative; cursor:pointer; display:block; float:left; display:inline; border:#B1C9E4 solid 1px; border-bottom:#DAEAF6 solid 1px; ; margin-right:6px; padding:0 10px; line-height:36px; margin-top:8px; background:#E8EFF7; }
+.box_900 .box_900_t .tabs .radius_top_left, .box_900 .box_900_t .tabs .radius_top_right { overflow:hidden; width:4px; height:4px; position:absolute; top:-1px; background:url(../images/10.png) no-repeat; }
+.box_900 .box_900_t .tabs .radius_top_left { left:-1px; background-position: 0 0; }
+.box_900 .box_900_t .tabs .radius_top_right { right:-1px; background-position:-8px 0; }
+.box_900 .box_900_t .tabs_hover { background:#FFFFFF; color:#0861A2; border-bottom:none; margin-top:9px; }
+
+/* box2 邀请注册页面应用到 */
+.box_896{ width:896px; margin:0 auto; border:#77B5E1 solid 2px; background:#F2F7FB; -webkit-border-radius:5px; border-radius:5px; -moz-border-radius:5px;}
+

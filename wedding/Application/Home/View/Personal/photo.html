@@ -1,0 +1,113 @@
+<extend name="Moduel/index"/>
+<block name="main">
+<div style="clear:none" class="skin-content posr">
+	<div style="width:100%;background:#feeeed;">
+		<form action="<{:U('Personal/dophoto')}>" method="post" enctype="multipart/form-data">
+		上传照片：<input type="file" name="file">
+				  <input type="submit" value="上传照片">
+		</form>
+</div>
+
+<input type="checkbox" onclick="selectAll()" id="check">全选
+<!-- <input type="checkbox" onclick="noAll()" id="check1">全不选
+<input type="checkbox" onclick="Fan()" id="check2">反选 -->
+<button class="shanchu">删除</button>
+<div style="overflow:hidden">
+<foreach name="list" item="val">
+
+ 	<div class="ppic" style="margin-left:10px;float:left;">
+		<img id="imgs" src="__PUBLIC__/photo/<{$val.picname}>" alt="<{$val.picname}>">
+			<div>
+				<button class="del btn-danger">删除照片</button>
+                <input type="checkbox" class="box" value="<{$val.picname}>">
+			</div>
+	</div>
+</foreach>
+</div>
+<script>
+	// //删除相册中的图片
+     $('.del').click(function(){
+        var _this = $(this);
+        // var picname =$("img").attr('src');
+        var picname=$(this).parent().prev().attr('alt');
+        $.ajax({
+            type:'post',
+            url:"<{:U('Personal/delper')}>",
+            data:"picname="+picname,
+            success:function(msg){
+                if(msg > 0){
+                    // alert('删除成功');
+                   _this.parent().parent().remove();
+                }else{
+                    alert('删除失败');
+                }
+            },
+
+        })
+    })
+</script>
+<script type="text/javascript">
+        var list=document.getElementsByClassName('box');
+            function selectAll()
+            {
+
+                for(var i=0;i<list.length;i++){
+                    if(document.getElementById('check').checked)
+                    {
+                        
+                        list[i].checked=1;
+                    }
+                }
+            }
+            function noAll()
+            {
+
+                for(var i=0;i<list.length;i++){
+                    if(document.getElementById('check1').checked)
+                    {
+                        list[i].checked=0;
+                    }
+                }
+            }
+
+
+            function Fan()
+            {
+
+                for(var i=0;i<list.length;i++){
+                    if(document.getElementById('check2').checked)
+                    {
+                        list[i].checked=!list[i].checked;
+                    }
+                }
+            }
+
+            $('.shanchu').click(function(){
+                var shan=$('.box');
+                for(var i=0;i<shan.length;i++)
+                {
+                    if(shan[i].checked)
+                       { var tu=shan[i].value;
+
+                        // console.log(tu);
+                        }
+                
+
+                $.ajax({
+                    type:'post',
+                    url:'<{:U("Personal/delAll")}>',
+                    data:'picname='+tu,
+                    success:function(msg)
+                 {
+
+                    if(msg > 0){
+                      $('.ppic').remove();  
+                    }
+                },
+
+                })}
+            })
+
+ </script>
+
+</block>

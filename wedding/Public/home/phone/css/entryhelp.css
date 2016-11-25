@@ -1,0 +1,40 @@
+
+/* 找回密码20090803*/
+#helpMainContent{width:900px;margin:10px auto;}  
+.leftContent{ background-color:#f3f8fc;width:200px;float:right; position:relative; min-height:300px;_height:300px; border:1px solid #d1e3f1}
+.leftContent .cornertl,.leftContent .cornertr,.leftContent .cornerbl,.leftContent .cornerbr{ background:url(../images/cornerpic.gif) no-repeat; position:absolute; overflow:hidden}
+.leftContent .cornertl,.leftContent .cornertr,.leftContent .cornerbl,.leftContent .cornerbr{ height:5px; width:5px;}
+.leftContent .cornertl { background-position:-52px 0; left:-1px; top:-1px;}
+.leftContent .cornertr { background-position:-57px 0; right:-1px; top:-1px;}
+.leftContent .cornerbr { background-position:-57px -5px; right:-1px; bottom:-1px;}
+.leftContent .cornerbl { background-position:-52px -5px; left:-1px; bottom:-1px;}
+.leftContent p { padding:20px 15px; font-family:Verdana;}
+#helpMainContent .link_m { float:right; margin-right:12px; margin-top:18px;}
+/*主内容 */
+#contentDiv{width:690px;float:left;background:url(../images/zhong690.gif) repeat-y;}
+#contentDiv .title{ background:url(../images/tou690.gif) no-repeat;}
+.title strong { background:url(../images/shuo.gif) no-repeat 10px center;font-size:14px; display:block;height:46px; line-height:46px; padding-left:35px;font-family:"微软雅黑"; color:#0861A2;}
+#contentDiv .box{background:url(../images/di690.gif) no-repeat left bottom; min-height:256px;_height:256px;}
+  #contentDiv .box ul,#contentDiv .box dl { padding:40px}
+  #contentDiv .box li{color:#333;margin-bottom:15px;height:40px; line-height:40px;}
+  #contentDiv .box li .tip { padding-left:10px}
+  #contentDiv .box dt {background:url(../images/anniu_tan.gif) no-repeat left center; padding-left:55px; height:48px; line-height:48px; margin-bottom:8px} 
+  #contentDiv .box dd { padding:0 0 10px 55px;}
+
+/* 表单样式   */
+.inputRedborder{width:200px;height:22px; padding:3px 2px; border:1px solid #c8c8c8;vertical-align:middle;}
+
+/*2010.11.30-dabai.chen- add - 找回密码模块修改*/
+.password_box{ float:left; display:inline; color:#06C; font-size:14px; width:228px; height:52px; padding:16px 0 16px 70px; border:#d5e2ea solid 1px; line-height:24px; margin-right:20px; margin-top:60px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.password_box a { font-size:12px; display:block; background:#fd943a url(../images/ruko_btn.jpg) no-repeat; text-align:center; color:#FFF; text-decoration:none; width:87px; height:22px; line-height:22px;}
+.password_box a:hover {color:#FFF;}
+.password_box :visited{color:#FFF;}
+.password_box :active{color:#FFF;}
+
+
+.password_box1{ background:#f3f8fc url(../images/1.gif) no-repeat 30px  22px ; margin-left:40px;}
+.password_box2{ background:#f3f8fc url(../images/2.gif) no-repeat 30px 30px;}
+.bule_size { color:#06C;}
+#contentDiv .box li.phone_li {height:auto; margin-top:-10px; margin-bottom:0; line-height:18px; padding-left:84px}
+#contentDiv .box li.phone_li span{color:#06C; text-decoration:underline; cursor:pointer;}
+#contentDiv .box li.phone_li_but{padding-left:84px;}

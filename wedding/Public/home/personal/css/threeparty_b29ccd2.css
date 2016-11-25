@@ -142,7 +142,7 @@ body { position: relative; }
 .mod-brief-info .brief-name a { vertical-align: middle; }
 .mod-brief-info .brief-item { padding: 0 10px; }
 .mod-brief-info .brief-group .btnG2 { cursor: not-allowed; }
-.mod-person-info { width: 1148px; padding: 0 20px; }
+.mod-person-info { width: 917px; padding: 0 20px; }
 .mod-person-info .info-title { padding: 16px 0 4px 0; border-bottom: 1px solid #e0e0e0; }
 .mod-person-info .info-title li { position: relative; width: 90px; font-size: 16px; line-height: 30px; color: #5e5e5e; text-align: center; cursor: pointer; }
 .mod-person-info .info-title a { color: #5e5e5e; text-decoration: none; }

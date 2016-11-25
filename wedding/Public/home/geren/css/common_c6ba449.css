@@ -1,0 +1,117 @@
+/* 公共 */
+body{ background-color: #fff;}
+img{ vertical-align: top;}
+h1,h2,h3,h4,strong{ font-weight: 400; font-size: 100%;}
+article{ font-size: 14px; line-height: 1.5;}
+.btnR2{ background-color: #f1007b; vertical-align: top;}
+.btnR2:hover{ background-color: #db0271;}
+.loading{ display: none; height: 36px; color: #ccc; font-size: 16px; text-align: center;}
+.loadMoreMember{ text-align: center;}
+.loadMoreMember a{ width: 300px; background-color: #b7aeda;}
+.loadMoreMember a:hover{ background-color: #a9a0c9;}
+h2.title{ padding: 17px 0 10px 20px; font-size: 22px; color: #666;}
+.ol-banner2 .rexian{ position: relative; top: 152px; display: inline-block; padding: 2px 8px; background-color: rgba(241,0,123,.5); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7ff1007b,endColorstr=#7ff1007b); border-radius: 5px; color: #fff; font-size: 20px;}
+.errorInfo{ line-height: 40px; text-align: center;}
+
+/* 头部 */
+.ol-header{ border-top:2px solid #f1007b; background-color: #fff;}
+.ol-logo, .ol-word, .ol-nav li{ float: left; display: inline;}
+.ol-logo{ width:100px; height:82px; background:url(../images/logo_c269fa4.png) left center no-repeat;}
+.ol-word{ width:108px; height:82px; background:url(../images/logo-word_cc566d3.png) left center no-repeat; text-indent:-9999px;}
+.ol-nav{ position: relative; float: right; zoom:1;}
+.ol-nav li{ position: relative; height: 82px; line-height: 82px; font-size: 16px;}
+.ol-nav li a{ display: block; padding: 0 21px; color: #333;}
+.ol-nav li a:hover{ color: #f1007b; text-decoration: none;}
+.ol-nav li.cur a{ color: #f1007b;}
+.ol-nav li#j-menuBeauty{ display: none; position: absolute; left: 0; bottom: 0; width: 106px; height: 3px; background-color: #f1007b; overflow: hidden;}
+.fixedBar{ position: fixed; left: 0; top:-46px; width: 100%; border-top:none; background-color:#f1007b; opacity: .8; filter:alpha(opacity=80); z-index: 9999;}
+.fixedBar .ol-logo,.fixedBar .ol-word,.fixedBar .ol-nav li{ height: 44px;}
+.fixedBar .ol-logo{ background: url(../images/logo2-24_d244411.png) no-repeat center;}
+.fixedBar .ol-word{ background-image:url(../images/logo-word2_9821e7c.png);}
+.fixedBar .ol-nav li{ line-height: 44px;}
+.fixedBar .ol-nav li#j-menuBeauty{ height: 100%; background-color: #d5006d;}
+.fixedBar .ol-nav li a{ color:#fff; -webkit-transition:none; transition:none;}
+.ol-placeholder{ display: none; width: 100%; height: 85px;}
+.root1000 .ol-nav li a{ padding: 0 15px;}
+
+/* 优质会员共用 */
+.memberTab{ border-bottom: 1px solid #e6e6e6;}
+.memberTab .shenqing{ float: right; margin-top: 9px;}
+.memberTab ul{ margin-bottom: -1px;}
+.memberTab li{ display: inline-block; width: 245px; height: 39px; line-height: 39px; border-bottom: 1px solid #fff; text-align: center; font-size: 18px; cursor: pointer; *display: inline; zoom:1;}
+.memberTab li.cur{ border-width: 2px; border-bottom-color: #f1007b; color: #f1007b;}
+.memberTab li:hover{ color: #f1007b;}
+.ol-memberList{ width: 1235px;}
+.ol-memberList .ol-memberItem,.ol-memberList .item-a span.btnR2{ -webkit-transition:.3s; transition:.3s;}
+.ol-memberList .ol-memberItem{ float: left; width: 200px; border:1px solid #e6e6e6; background-color: #fff; margin-right: 45px; margin-bottom: 38px; display: inline;}
+.ol-memberList .ol-memberItem:hover{ border-color:#c6c6c6; -webkit-transform:translateY(-10px); -moz-transform:translateY(-10px); transform:translateY(-10px);}
+.ol-memberList .item-a{ display: block; position: relative; zoom:1; text-decoration: none;}
+.ol-memberList .item-a:hover{ text-decoration: none;}
+.ol-memberList .item-a img{ width: 200px; height: 250px;}
+.ol-memberList .menberInfo{ height: 70px; padding:10px 3px 0 7px; line-height: 30px; color: #aaa;}
+.ol-memberList .menberInfo span{ display: inline-block;}
+.ol-memberList .menberInfo span.name{ width: 90px; font-size: 18px; color: #f1007b; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; vertical-align: top;}
+.ol-memberList .menberInfo span.city{ width: 58px; padding-right: 8px; text-align: right;}
+.ol-memberList .menberInfo span.salary{ width: 140px;}
+.ol-memberList .item-a span.btnR2{ position: absolute; left: 50%; bottom: 80px; width: 76px; height: 24px; line-height: 24px; margin-left: -38px; opacity: 0; font-size: 12px; filter:Alpha(opacity=0)}
+.ol-memberList .item-a:hover span.btnR2{ opacity: 1; bottom: 90px;}
+/*.root1000 .ol-memberList{ width: 1048px;}*/
+
+/* 红娘风采 */
+.ol-hnItem p,.ol-hnItem .hnName{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.ol-hnItem{ position: relative; float: left; display: inline; width: 200px; margin-right: 24px; margin-bottom: 15px; border:1px solid #ebebeb; background-color: #fff; font-size: 12px; overflow: hidden; zoom:1; cursor: pointer;}
+.ol-hnItem:hover .btnLink{ right: 0; opacity: .9;}
+.ol-hnItem .hnImgBox{ display: block; width: 100%; height: 278px; overflow: hidden;}
+.ol-hnItem .hnImgBox img{ width: 100%; height: 278px;}
+.ol-hnItem .hnTxtBox{ padding: 7px 12px; line-height: 25px;}
+.ol-hnItem p{ width: 100%; color: #999899; font-size: 12px;}
+.ol-hnItem b{ color: #ee7e7f; font-size: 14px; font-weight: 400;}
+.ol-hnItem .hnName{ display: inline-block;/* width: 85px;*/ width: 100%; vertical-align: middle; font-size: 18px; color: #ee7e7f;}
+.ol-hnItem .btnLink{ position: absolute; right: -55px; top: 225px; width: 54px; height: 31px; line-height: 31px; padding-left: 30px; background-image: url(../images/btn_ea23207.png); overflow: hidden; opacity: .8; color: #fff; -webkit-transition:.3s; transition:.3s;}
+.ol-hnItem .btnLink:hover{ text-decoration: none; opacity: 1; text-decoration: underline; color: #fff;}
+
+/* 侧边栏 */
+.m-title{ position: relative; padding-top: 9px; padding-bottom: 9px; zoom:1;}
+.m-title .s-title{ position: relative; background-color: #fff; padding-right: 15px; font-size: 14px; color: #000;}
+.m-title .line{ position: absolute; left: 0; top: 50%; height: 0; width: 100%; border-bottom: 1px dotted #d8d8d8; overflow: hidden;}
+.ol-mainBar{ float: left; display: inline; width: 882px; margin-right: 18px;}
+.ol-sideBar{ float: right; display: inline; width: 290px;}
+.ad-photo{ position: relative; margin-bottom: 10px; zoom:1;}
+.ad-photo img{ width: 100%; height: 296px;}
+.ad-photo .ad-btn{ position: absolute; left: 50%; bottom: 38px; width: 190px; height: 42px; margin-left: -95px; background:url(about:blank); cursor: pointer;}
+.ad-photo .ad-btn i{ position: absolute; right: 14px; top: 50%; width: 10px; height: 16px; margin-top: -9px; background-image: url(../images/arrow_9f1e993.png); overflow: hidden;}
+.ad-photo .ad-btn:hover i{ -webkit-animation: move .5s infinite; animation: move .5s infinite;}
+.side-wrap{ border:1px solid #e0e0e0; border-radius: 3px; background-color: #fff; padding: 8px 15px; margin-bottom: 10px;}
+.qaListBox li{ color: #333;}
+.qaListBox li img{ width: 100%; height: auto;}
+.qaListBox h3{ width: 100%; padding: 3px 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.qaListBox h3 a{ color: #333; font-size: 14px;}
+.qaListBox a:hover{ color: #0097d3}
+.qaListBox p{ color: #9f9f9f; font-size: 12px;}
+.qaListBox .img-txt{ position: relative; zoom:1; margin-bottom: 10px;}
+.qaListBox .img-txt h3{ position: absolute; left: 0; bottom: 0; background-color: rgba(0,0,0,.6); text-align: center; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+.qaListBox .img-txt h3 a{ color: #fff;}
+.img-txt .imgBox{ display: block; height: 140px; overflow: hidden;}
+.s-memberList li,.side-wrap .memberInfo{ overflow: hidden; zoom:1;}
+.s-memberList li{ position: relative; margin-bottom: 20px;}
+.s-memberList .memberPhoto{ float: left; display: inline; margin-right: 11px;}
+.s-memberList .memberPhoto img{ width: 80px; height: 100px;}
+.s-memberList .memberInfo p{ line-height: 21px;}
+.s-memberList .memberInfo p:first-child{ font-size: 12px; color: #9f9f9f;}
+.side-wrap .memberInfo .btnP2{ position: absolute; left: 91px; bottom: 3px; width: 75px; height: 24px; line-height: 24px;}
+.side-wrap .memberInfo .memberName{ display: inline-block; width: 75px; vertical-align:top; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 14px;}
+
+/*在线咨询*/
+.onlineAskBar{ position: fixed; right: 10px; top: 40%; width: 121px; height: 88px; padding-top: 150px; background-image: url(../images/consultation_8b3d6ec.png); overflow: hidden; cursor: pointer; text-align: center; color: #fff; z-index: 9999; _position:absolute; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i2.zastatic.com/zhenai3/zhenai2015/img/offline/consultation_8b3d6ec.png',sizingMethod='crop');}
+.onlineAskBar .ol-date{ width: 90px; padding: 2px 0 2px 18px; margin: 0 auto 8px auto; background-color: #bf017b; border:1px dashed #333; color: #ffff00; line-height: 20px; text-align: left;}
+.onlineAskBar .ol-time{ font-size: 18px;}
+
+@-webkit-keyframes move{
+	0%,100%{right:14px;}
+	50%{right:10px;}
+}
+@keyframes move{
+	0%,100%{right:14px;}
+	50%{right:10px;}
+}
+.root1000 .ol-mainBar{ width: 682px;}

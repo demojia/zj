@@ -10,8 +10,10 @@ return array(
     'DB_PORT'               =>  '3306',        // 端口
     'DB_PREFIX'             =>  'za_',    // 数据库表前缀
     // 'VAR_PAGE'              =>  'page',
-	'SHOW_PAGE_TRACE' 		=>  false  , //打开页面调试错误
+	'SHOW_PAGE_TRACE' 		=>  true  , //打开页面调试错误
 
      'TMPL_L_DELIM'          =>  '<{',            // 模板引擎普通标签开始标记
     'TMPL_R_DELIM'          =>  '}>',            // 
+
+
 );

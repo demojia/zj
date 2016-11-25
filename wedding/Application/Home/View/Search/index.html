@@ -1,0 +1,202 @@
+<extend name="Moduel/index"/>
+<block name="main">
+<div class="frameW">
+<div class="filter_area clearfix">
+<div class="filter_conditions">
+<form action="<{:U('Search/index')}>"
+method="post">
+<div class="selected_conditions clearfix">
+<div class="cond_txt">己选条件：
+</div>
+
+<div class="cond_wrap clearfix">
+<div class="cond_wrap_in">
+
+<div id="sex" class="cond_item">
+<a href="javascript:void(0);" class="cond_main_txt"><em
+	data-default="性别">性别</em><i></i></a>
+<dl id="sexs" class="cond_item_con">
+	<dt>请选择性别：</dt>
+	<dd>
+		<select name="sex" id="gender">
+			<option value="1"
+				>女士</option>
+			<option value="0"
+				>男士</option>
+		</select>
+	<button>确定</button>
+	</dd>
+</dl>
+</div>
+
+
+
+
+<div id="edu" class="cond_item">
+	<a href="javascript:void(0);" class="cond_main_txt"><em data-default="学历">学历</em><i></i></a>
+	<a href="javascript:;" onclick="deleteOption('Education');return false;" class="del_cond"></a>
+	<dl id="edus" class="cond_item_con">
+		<dt>请选择学历：</dt>
+		<dd>
+		<select name="education" id="education">
+			
+			<option 
+			value="0">高中及以下学历
+			</option>
+			<option 
+			value="1">大专
+			</option>
+			<option 
+			value="2">本科
+			</option>
+			<option 
+			value="3">本科
+			</option>
+			<option 
+			value="4">硕士
+			</option>
+			<option 
+			value="5">博士
+			</option>
+                
+		</select>
+			<button>确定</button>
+		</dd>
+	</dl>
+</div>
+
+
+
+<div id="salary" class="cond_item">
+	<a href="javascript:void(0);" class="cond_main_txt"><em data-default="月收入">月收入</em><i></i></a>
+	<a href="javascript:;" class="del_cond"></a>
+	<dl id="salaries" class="cond_item_con">
+		<dt>请选择月收入：</dt>
+		<dd>
+		<select name="salary" id="salary">
+			
+			<option 
+			value="0">3000-5000
+			</option>
+			<option 
+			value="1">5001-8000
+			</option>
+			<option 
+			value="2">8001-10000
+			</option>
+			<option 
+			value="3">10001-15000
+			</option>
+			<option 
+			value="4">15001-20000
+			</option>
+			<option 
+			value="5">20000+
+			</option>
+		</select>
+			<button>确定</button>
+		</dd>
+	</dl>
+</div>							
+</div>
+
+<input style="width:200px;height:25px" type="text" name="keyword" placeholder="用户名搜索">
+<button>确定</button>
+</div>
+</div>
+
+<div class="search-hot-tag clearfix">
+<div class="cond_txt">热门标签：</div>
+<ul class="clearfix">
+<li class="c1"><a href="javascript:;">珍心会员</a></li>
+<li class="c2"><a href="javascript:;">已认证</a></li>
+<li class="c3"><a href="javascript:;">新用户</a></li>
+<li class="c4"><a href="javascript:;">天生一对</a></li>
+<li class="c5"><a href="javascript:;">谁在找我</a></li>
+<li class="c1"><a href="javascript:;">高学历</a></li>
+<li class="c2"><a href="javascript:;">高收入</a></li>
+<li class="c3"><a href="javascript:;">魅力女</a></li>
+<li class="c4"><a href="javascript:;">公务员</a></li>
+<li class="c5"><a href="javascript:;">有房一族</a></li>
+<li class="c6"><a
+href="javascript:;"
+>有车一族</a></li>
+</ul>
+</div>
+<div style="width:100%">
+<ul>
+	<foreach name="data" item="v">
+	<li style="width:210px;height:300px;background:white;float:left;margin:12px 8px 12px 8px">
+	<div style="width:200px;height:200px">
+		<img style="width:200px;height:250px;margin:5px 5px 5px 5px;border-radius:5px" src="__PUBLIC__/uploads/<{$v.icon}>" alt="">
+		<?php
+		// if(empty($v['icon']))
+		// 	echo '<img style="width:200px;height:250px" src="__PUBLIC__/photo/s_za_582d9a9ca92db.jpg">';
+		?>
+		</div>
+		<div style="margin-left:42px;margin-top:54px">
+	<p ><{$v.username}> / <{$v.age}>岁 /　<{$v.w_province}> / <if condition="$v.sex eq 0">男
+	<elseif condition="$v.sex eq 1"/>女
+	</if></p>
+	<p>  <if condition="$v.salary eq '5'">20000以上
+        <elseif condition="$v.salary eq '0'" />3000-5000
+        <elseif condition="$v.salary eq '1'" />5001-8000
+        <elseif condition="$v.salary eq '2'" />8001-10000
+        <elseif condition="$v.salary eq '3'" />10001-15000
+        <elseif condition="$v.salary eq '4'" />10001-20000
+
+    </if></p>
+	
+	<a style="margin-left:40px;" href="<{:U('Letter/index')}>?id=<{$v.id}>"><span>打招呼</span></a></div>
+	</li>
+	</foreach>
+</ul>
+	
+</div>
+<span style="margin:0 auto;"><h2>
+<{$tishi}>
+</h2></span>
+</form>
+</div>
+</div>
+<div width=20 style="background:white;height:20px">
+<{$page}>
+</div>
+</div>
+<script>
+	var sex=document.getElementById('sex');
+	var age=document.getElementById('age');
+	var edu=document.getElementById('edu');
+	var salary=document.getElementById('salary');
+	sex.onclick=function(){
+		// sex.setAttribute("class","")
+		sexs.style.display="block";
+		// ages.style.display="none";
+		edus.style.display="none";
+		salaries.style.display="none";
+	}
+
+	// age.onclick=function(){
+	// 	ages.style.display="block";
+	// 	sexs.style.display="none";
+	// 	edus.style.display="none";
+	// 	salaries.style.display="none";
+	// }
+
+	edu.onclick=function(){
+		edus.style.display="block";
+		// ages.style.display="none";
+		sexs.style.display="none";
+		salaries.style.display="none";
+
+	}
+
+	salary.onclick=function(){
+		salaries.style.display="block";
+		// ages.style.display="none";
+		sexs.style.display="none";
+		edus.style.display="none";
+
+	}
+</script>
+</block>

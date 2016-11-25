@@ -1,0 +1,28 @@
+@charset "gb2312";
+/* CSS Document */
+.italic { font-style: italic; color: #555555; }
+#contentDiv2 .box{min-height:256px;_height:256px; padding-left:10px;}
+#contentDiv2 .box p{text-align:center;}
+#contentDiv2 .box ul,#contentDiv .box dl { padding:50px 20px 45px 50px;}
+#contentDiv2 .box li{color:#333;}
+#contentDiv2 .box li .tip { padding-left:10px}
+#contentDiv2 .box dt {background:url(../images/anniu_tan.gif) no-repeat left center; padding-left:55px; height:48px; line-height:48px; margin-bottom:8px} 
+#contentDiv2 .box dd { padding:0 0 10px 55px;}
+.box_900 .box_900_t strong {background: url(../images/chongzhi.gif) no-repeat 10px center;font-size: 14px; display: block; height: 46px; line-height: 46px; padding-left: 35px; font-family: "Î¢ÈíÑÅºÚ"; color: #0861A2;}
+.box ul{ width:370px; }
+.bule_size{background:url(../images/shouji.gif) no-repeat left center; padding-left:25px; color:#0861a2; display:block;}
+.bule_size_2{background:url(../images/xinfeng.gif) no-repeat left center; padding-left:25px; color:#0861a2; display:block;}
+.resg_b4{ font-size:16px;}
+.phone_li_but{ padding-left:61px;}
+.shouji_info{ line-height:20px; width:365px; padding-bottom:20px; padding-top:20px; _padding-top:0px;}
+.chongzhi_line{ width:1px; min-height:258px;_height:258px;margin:auto}
+.youwu{color:#F00; padding-left:75px; height:18px; margin:2px 0;}
+.w_80{ width:80px; line-height:23px;}
+.w_160{ width:160px; line-height:23px;}
+#contentDiv2 .box li .kanbuqing{ text-decoration:underline; color:#0000ff;}
+.huoqu{ width:86px; height:27px; background:url(../images/huoqu.jpg) no-repeat; border:none; color:#0861a2; font-weight:bold; text-align:center; cursor:pointer; vertical-align: middle; line-height:25px;}
+#contentDiv2 .box li input{ margin-right:10px;}
+.juzhong{ padding:0 200px;}
+.box_900_m{ height:auto;}
+
+#cellphoneForm{  overflow:hidden;  }

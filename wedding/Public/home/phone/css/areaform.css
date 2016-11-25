@@ -1,0 +1,60 @@
+@charset "gb2312";
+/* 地区样式*/
+
+
+ul, dl, li, a { padding:0; margin:0; }
+ul, dl, li { list-style: none;}
+.w30{position:absolute; width:380px;}
+.areaForm_box{ float:left;position:relative;}
+.area_box { border:#CDCDCD solid 1px;  padding:0px; line-height:2; font-size:12px; font-family:"宋体"; background-color: #FFF; box-shadow:2px 2px 3px #DEF;}
+.area_box .area_box_tr,.area_box .area_box_tr2{ float:none; border-bottom:#CDCDCD dashed 1px; padding:0.5em 0; overflow:hidden; zoom:1; padding:10px 0px 12px 15px;}
+.area_box .area_box_tr2 { border-bottom-width: 0px;  padding-bottom:12px;  }
+
+.area_box a { color:#383838 !important; padding:0 5px; _padding-top:2px; text-decoration:none;display:inline-block; zoom:1;vertical-align:top;}
+.area_box a:link { color:#383838 !important;}
+.area_box a:hover{ color:#fff !important; background-color:#3366CC; text-decoration:none;}
+
+.area_box a.now { font-weight: bold; cursor:default;color:#0861A2;background:#DFF2FF;}
+.area_box a.now:hover { background-color:#DFF2FF; color:#333 !important; text-decoration:none;}
+
+/*没有手型的样式*/
+.area_box a.now2:hover{color:#fff; background:#0861A2; text-decoration:none}
+.area_box a.now2{ background:#DFF2FF;font-weight: bold;color:#0861A2;}
+/*没有手型的样式end*/
+.province_box { position:absolute; width:27em;}
+.province_box li{ display:inline-block; zoom:1; *display:inline; width:4em;}
+.city_box { padding:0px 10px 0px 5px; max-height: 300px; height:expression(this.scrollHeight > 300 ? "300px" : "auto"); overflow-y:auto;}
+
+
+/* For IE*/
+.city_box { scrollbar-track-color: #fff; scrollbar-arrow-color: #3d5e89; scrollbar-face-color: #dbecfc; scrollbar-shadow-color: #b7d0e6; scrollbar-highlight-color: #b7d0e6; scrollbar-3dlight-color: #fff;}
+
+/* For webkit*/
+.city_box::-webkit-scrollbar { width: 14px; height: 134px;} 
+.city_box::-webkit-scrollbar-track{ background: #fff;}
+.city_box::-webkit-scrollbar-thumb{ -webkit-border-radius: 10px; border-radius: 10px; background: #cee0f8 url(../images/scrollbar.jpg) no-repeat center center;-webkit-box-shadow: inset 0 0 1px #9bb5ce; }
+
+/* input 各页面宽度*/
+#sech .itsLocation input{ width:62px;margin: 0 5px; padding:2px;}
+#divBaseInfo input.w1{ padding-left:3px;width: 95px;}
+.queryFieldsDiv .areaForm_box  .inputText{ width: 115px;}
+.dataList .newage { width:90px;}
+.dataList .newage_2{ width:85px;}
+.dataList .newage80{ width:80px;}
+.baseSearchBox  .selectSize{width:75px;}
+.hotcity .box_f3 input{ width:80px;}
+.ssBox input.selectSize2{ width:45px;}
+/* areaForm_box 各页面浮动*/
+.jyssBox .areaForm_box,.form_box .areaForm_box,.databox .areaForm_box{ float:none; display:inline;}
+
+/*li被影响*/
+.databox .areaForm_box .province_box .area_box_tr li,.databox .areaForm_box .province_box .area_box_tr2 li{ float:left; width:4em;}
+
+/* 输入框 */
+.jyssBox input,.baseSearchBox input.selectSize,.search-select input.selectSize,.modeelect input.selectSize,.databox input.selectSize,.hotcity .box_f3 input,.jcBox input.selectSize,.ssBox input.selectSize2{ vertical-align:middle; padding-top:2px; *padding-top:4px;padding-top:4px\0;}
+.databox input.selectSize,.jcBox input.selectSize{ width:55px;}
+.dataList input.newage{ vertical-align:middle; padding-left: 5px; padding-top:10px\9; padding-bottom:0px; height:30px; height:20px\9;}
+.dataList input.emcolor{background:#ffe5e5;}
+/*20120518工作地区样式修改*/
+.pleasechoosebox{ background:#dff2ff; color:#0861a2; padding:5px 0 5px 10px; font-size:12px;}
+.area_box a.select{color:#fff !important; background-color:#3366CC;}

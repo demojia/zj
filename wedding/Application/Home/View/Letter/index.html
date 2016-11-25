@@ -1,0 +1,99 @@
+<extend name="Moduel/index"/>
+<block name="main">
+
+
+<div class="letters_main mt20">
+<div class="recipient e_clear">
+<div class="recipient_top">
+<div class="avatar_send">
+<a onmousedown="send_jy_pv2('msg_fx_zp');" target="_blank" href="">
+<img src="__PUBLIC__/uploads/<{$icon}>" alt="" height="90px" width="74px">
+</a>									
+</div>
+<div class="info">
+<div class="status"> 
+<a target="_blank" href="" title="<{$username}>"><{$username}></a>
+<span>
+
+
+</span>
+</div>
+<div class="about">
+<p><{$age}>岁，
+<{$height}>cm，
+<{$w_p}>-<{$w_c}>，诚信2星级</p>			 	   	
+<p> 
+<span>照片：<a onmousedown="send_jy_pv2('msg_fx_zplj');" href="" target="_blank" title="照片" alt="照片" class="a_blue12"><{$count}>张</a></span>
+</span> 
+<span>珍爱有缘人</span> 
+</p>				 	   	
+</div>
+</div>		
+</div>	
+</div>
+
+<p class="e_clear messageRecord">
+<img src="__PUBLIC__/Home/images/safe_icon.jpg" height="15" width="14">&nbsp;&nbsp;<span>安全提示：请不要轻易透露您的联系方式，不要借钱给陌生人。</span>&nbsp;&nbsp;&nbsp;&nbsp;<a class="c_lblue" href="" target="_blank">交友安全提示</a>
+</p>
+
+<div class="letters_content send_content">
+<dl class="e_clear">
+<form action="<{:U('Letter/send')}>" method="post">
+<input type="hidden" name="name" value="<{$username}>">
+<div class="editor">
+
+
+<div class="textarea">
+<textarea name="lecontent" style="border:none;border:1px solid none;width:664px;padding:2px 10px;height:200px;line-height:24px;font-size:14px;color:#666;resize: none;"></textarea>
+</div>
+</div>
+<div class="letters_btn e_clear">
+<ul>
+<li>
+<div class="letters_btn_layer" style="display:none;">
+<div class="letters_btn_layer_top"></div>
+<div class="letters_btn_layer_content">
+<p>一张邮票，同时发送到她的手机和邮箱，让她第一时间免费看信，秒速回复。</p>
+</div>
+<div class="letters_btn_layer_bottom"></div>
+</div>
+<a class="mobile_stamps" href=""></a>
+</li>
+<li>
+<div class="letters_btn_layer" style="display:none;">
+<div class="letters_btn_layer_top"></div>
+<div class="letters_btn_layer_content">
+<p>为她贴一张邮票，回复率可提升13倍，以后通信全免费！</p>
+</div>
+<div class="letters_btn_layer_bottom"></div>
+</div>
+<a class="stamps" href=""></a>
+</li>
+<li>
+<div class="letters_btn_layer" style="display:none;">
+<div class="letters_btn_layer_top"></div>
+<div class="letters_btn_layer_content">
+<p>对方需花费一张邮票方可查看您的来信。您也可以选择贴邮票发信，让对方免费看。今后双方即可免费发信和看信，不再收费。</p>
+</div>
+
+</div>
+<button>立即发信</button>
+</li>
+</ul>
+</div>
+</form>
+</dl>
+
+<div class="gift" style="top:-2px;">
+<div class="head"></div>
+<div class="center">
+<div class="tips"><p><{$username}></p>对你说,进一步发展吧</div>
+<div class="pic">
+<a href=""><img src="__PUBLIC__/uploads/<{$icon}>" alt=""><span>魅力值10点</span></a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</block>

@@ -47,6 +47,12 @@
 				<input type="radio" value='1' name='sex'>男
 			</div><br>
 			<div class="col-form">
+				<label>我的昵称:</label>
+				<input type="text" id='username' name='username'  style="height:30px;width:160px">
+
+			</div>
+			<br>
+			<div class="col-form">
 				<label>我的年龄:</label>
 				<input type="text" id='age' name='age'  style="height:30px;width:160px">
 
@@ -213,12 +219,19 @@ var zacity=false;
 var zaage=false;
 var zajob=false;
 var zaxing=false;
+var zausername=false;
 
 
 // 验证手机号
 $("#phone").blur(function(){
 	$("#phone+p").remove();
 	checkTel(this);
+	$(this).after(msg);
+});
+
+$("#username").blur(function(){
+	$("#username+p").remove();
+	checkusername(this);
 	$(this).after(msg);
 });
 
@@ -281,6 +294,16 @@ function checkAge(obj)
 	}
 }
 
+function checkusername(obj)
+{
+	msg='';
+	if($(obj).val().length==0){
+		msg='<p>昵称不为空</p>';
+	}else{
+		zausername=true;
+	}
+}
+
 function checkXing(obj)
 {
 	msg='';
@@ -334,8 +357,8 @@ function checkBirth(obj)
 function checkTel(obj)
 {
 	msg = '';
-	if($(obj).val().length==0){
-		msg = "<p class='error'>手机号不能为空</p>";
+	if($(obj).val().length<11){
+		msg = "<p class='error'>手机号不少于11</p>";
 	}else{
 		data = {"mobile":$(obj).val()};
 		$.post("<{:U('Register/tel')}>",data,function(d){
@@ -381,7 +404,7 @@ function checkRepass(obj)
 
 function checkinputAll(){
 
-	if(zapro&&zacity&&zabirth&&zaphone&&zapass&&zarepass&&zaage){return true;}else{return false;}
+	if(zausername&&zapro&&zacity&&zabirth&&zaphone&&zapass&&zarepass&&zaage){return true;}else{return false;}
 }
 
 var yz_img=$('#yz_img');

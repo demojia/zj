@@ -1,0 +1,75 @@
+<extend name="Moduel/index"/>
+<block name="main">
+<?php if($data->code!=200)
+{
+	echo '<p>出错了哦</p>';
+}
+
+?>
+<?php 
+
+		for($i=0;$i<tracks.length;$i++)
+		{
+			echo tracks.length;
+		}
+
+		  // echo '1'.$data->result->tracks[0]->name.'<br>';
+		  // echo '2'.$data->result->tracks[0]->alias[0].'<br>';
+		  // echo '3'.$data->result->tracks[0]->album->name.'<br>';
+		  // echo '4'.$data->result->tracks[0]->album->type.'<br>';
+		  // echo '5'.$data->result->tracks[0]->album->blurPicUrl.'<br>';
+		  // echo '4'.$data->result->tracks[0]->artists[0]->picUrl.'<br>';
+		  // // echo '5'.$data->result->tracks[0]->artists[0]->imglvlUrl.'<br>';
+		  // echo '6'.$data->result->tracks[0]->mp3Url.'<br>';
+?>
+<div style="overflow:hidden;">
+	<?php foreach($data->result->tracks as $music): //dump($music);?>
+<div id="box" style="float:left;margin:10px 30px 10px 88px">
+	
+<!-- 	 echo $music->bMusic->name.'<br>';
+	 echo $music->mp3Url.'<br>';
+	 echo $music->album->blurPicUrl.'<br>'; -->
+<a href="http://music.163.com/#/album?id=<?php echo $music->album->id;?>">
+<img id="pic" onmouseover='big()' style="width:170px;height:170px" src="<?php echo $music->album->blurPicUrl;?>" alt="">
+</a>
+
+
+
+</div>
+<?php endforeach ?>
+</div>
+<script>
+
+// var pic=document.getElementById('pic');
+// 	for(var i=0;i<pic.length;i++)
+// 	{
+// 		pic.onmouseover=function(){
+// 			console.log(a);
+// 			img.style.width='100px';
+// 		}
+// 	}
+
+
+            // $(function(){
+
+            //     $("#pic").mouseover(function(){
+
+            //         var width = $(this).width();
+                
+            //             $(this).width(175);
+            //             $(this).height(175);
+            //     });
+            // });
+            // $(function(){
+
+            //     $("#pic").mouseout(function(){
+
+            //         var width = $(this).width();
+                
+            //             $(this).width(170);
+            //             $(this).height(170);
+            //     });
+            // });
+
+</script>
+</block>

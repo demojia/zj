@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>jquery-select</title>
+		<style type="text/css">
+			* {
+				margin:0;padding:0;list-style:none;
+			}
+			body {
+				font-size:12px;overflow-y: scroll;
+			}
+
+			.form {
+				width:500px; margin:100px auto;border:1px solid #ccc;padding:5px;
+			}
+
+			
+		</style>
+		<link rel="stylesheet" href="css/j-select.css" />
+	</head>
+	<body>
+			<!--
+			<div id="mySelect_select" class="j_select">
+				<div id="mySelect_current_select" class="current_select" tabindex="0">
+					<span class="current_select_text"></span>
+					<span class="select_icon">
+						<svg width="13" height="13" viewBox="0 0 200 200">
+							<g class="transform-group">
+								<g transform="scale(0.1953125, 0.1953125)">
+									<path d="M818.393225 300.939003c12.824073-14.09502 34.658358-15.126512 48.752354-2.303462 14.09502 12.843516 15.126512 34.678824 2.302439 48.752354l-332.676845 364.835266c-12.844539 14.114462-34.659381 15.127536-48.753377 2.302439-0.815575-0.733711-1.588171-1.486864-2.302439-2.302439l-0.080841-0.078795-0.13917-0.13917L153.018046 347.388918c-12.824073-14.074553-11.791557-35.909861 2.302439-48.752354 14.09502-12.824073 35.930327-11.792581 48.753377 2.303462l307.168891 336.845795 307.149449-336.845795L818.393225 300.939003 818.393225 300.939003z" fill="#272636"></path>
+								</g>
+							</g>
+						</svg>
+					</span>
+				</div>
+				<ul tabindex="1"></ul>
+			</div>
+			-->
+			
+			
+		<div class="form">
+			<select id="mySelect" class="select">
+				<option value="贵州省">贵州省</option>
+				<option value="云南省">云南省</option>
+				<option value="重庆市">重庆市</option>
+				<option value="湖南省">湖南省</option>
+				<option value="四川省">四川省</option>
+				<option value="广东省">广东省</option>
+				<option value="广西壮族自治区">广西壮族自治区xxxxxxxxxxxxxxxxx</option>
+				<option value="安徽省">安徽省</option>
+				<option value="北京市">北京市</option>
+				<option value="天津市">天津市</option>
+				<option value="广东省">广东省</option>
+				<option value="广西壮族自治区">广西壮族自治区</option>
+				<option value="安徽省">安徽省</option>
+				<option value="北京市">北京市</option>
+				<option value="天津市">天津市</option>
+				<option value="广东省">广东省</option>
+				<option value="广西壮族自治区">广西壮族自治区</option>
+				<option value="安徽省">安徽省</option>
+				<option value="北京市">北京市</option>
+				<option value="天津市">天津市</option>
+				<option value="广东省">广东省</option>
+				<option value="广西壮族自治区">广西壮族自治区</option>
+				<option value="安徽省">安徽省</option>
+				<option value="北京市">北京市</option>
+				<option value="天津市">天津市</option>
+			</select>
+			
+		</div>
+		
+		<div class="form">
+			<select id="city" class="select">
+				<option value="贵阳">贵阳</option>
+				<option value="六盘水">六盘水</option>
+				<option value="都匀">都匀</option>
+				<option value="福泉">福泉</option>
+				<option value="遵义">遵义</option>
+				<option value="兴义">兴义</option>
+				<option value="安顺">安顺</option>
+				<option value="凯里">凯里</option>
+				<option value="毕节">毕节</option>
+			</select>
+		</div>
+		
+		<div class="form">
+			<select id="year" class="select">
+				<option value="1990">1990</option>
+				<option value="1991">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+				<option value="1995">1995</option>
+				<option value="1996">1996</option>
+			</select>年
+			
+			<select id="month" class="select">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>月
+			
+			<select id="day" class="select">
+				<script>
+					for (var i = 1; i <= 31; i++) {
+						document.write('<option value="'+ i +'">'+ i +'</option>');
+					}
+				</script>
+			</select>日
+		</div>
+		
+		<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/nicescroll/jquery-nicescroll.js"></script>
+		<script src="js/jquery-jSelect.min.js" ></script>
+		<script type="text/javascript">
+		
+//			$("#mySelect").jSelect();
+//			$("#city").jSelect();
+
+			$(".select").jSelect();
+		</script>
+	</body>
+</html>

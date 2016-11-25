@@ -12,29 +12,18 @@
 <link href="http://i2.zastatic.com/zhenai3/zhenai2015/img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
 <link rel="stylesheet" href="/wedding/Public/home/css/public_44e62d1.css"/>
 <link rel="stylesheet" href="/wedding/Public/home/css/common_c6ba449.css"/>
-<!--[if lt IE 9]> <script type="text/javascript"> (function (){ var tag = ["address","article","aside","audio","canvas","details","figcaption","figure","header","footer","hgroup","menu","nav","section","summary","time","video"],i=0; for(i in tag){ document.createElement(tag[i]); } })();</script><![endif]-->
 <script src="/wedding/Public/home/js/lab.min_e842152.js"></script>
 <script src="/wedding/Public/home/js/sea_7e06016.js"></script>
 <script src="/wedding/Public/home/js/sea-config_300e430.js"></script>
-
-
-	<link rel="stylesheet" href="/wedding/Public/home/css/index_6738c59.css"/>
+<link rel="stylesheet" href="/wedding/Public/home/css/index_6738c59.css"/>
+<style type="text/css">
+	.aa{
+		text-decoration: none;
+		color:white;
+	}
+</style>
 </head>
 <body>
-	
-<!-- 头部 -->
-<script type="text/javascript">
-//宽窄屏切换
-var smallscreen = false;
-var domWidth = document.documentElement.clientWidth;
-if ( domWidth<1200 ) {
-    smallscreen = true;
-    var bodyTag = document.getElementsByTagName("body")[0],
-    bodyClassName = bodyTag.getAttribute("className") || bodyTag.getAttribute("class");
-    bodyClassName = bodyClassName ? bodyClassName+" " : "";
-    bodyTag.className = bodyClassName+"root1000";
-}
-</script>
 <header class="ol-header">
 	<section class="frameW clearfix">
 		<a class="ol-logo" href="javascript:;/" title="珍爱网"></a>
@@ -43,13 +32,14 @@ if ( domWidth<1200 ) {
 			<ul>
 				<li id="j-menuBeauty" class="menu-scroll"></li>
 				<li><a href="/offline/index.do">首页</a></li>
-				<li><a href="/offline/serviceIntroduce.do">他她说</a></li>
+				<li><a href="<?php echo U('hesay/index');?>">星座说</a></li>
 				<li><a href="/offline/handsomes.do" rel="nofollow">优质会员</a></li>
 				<li><a href="/offline/loveStoryIndex.do" rel="nofollow">成功故事</a></li>
 				<li><a href="<?php echo U('Personal/index');?>">个人中心</a></li>
+				<li><a href="<?php echo U('Weather/index');?>">查看天气</a></li>
 				
 				<?php
- if($_SESSION['user']['phone']) { echo '<li>welcome:<span style="color:pink;font-size:14px">'.$_SESSION['user']['phone'].'</span></li>'; }else{ echo '<a href="">请登录寻找良缘</a>'; } ?>
+ if($_SESSION['user']['phone']) { echo '<li>welcome:<span style="color:pink;font-size:14px">'.$_SESSION['user']['username'].'</span></li>'; }else{ echo '<a href="">请登录寻找良缘</a>'; } ?>
 				<li><a href="<?php echo U('Login/loginout');?>">退出</a></li>
 			</ul>
 		</menu>
@@ -63,8 +53,9 @@ if ( domWidth<1200 ) {
 			<ul class="g-slide-wrapper">
 
 			<?php if(is_array($list)): foreach($list as $key=>$val): ?><li style="display: block">
-				<a style="background-image:url(/wedding/Public/lunbo/<?php echo ($val["pic"]); ?>);"></a>			
-				<a style="background-image:url(/wedding/Public/lunbo/<$val.pic}>);"></a></li><?php endforeach; endif; ?>
+<a style="background-image:url(/wedding/Public/lunbo/<?php echo ($val["pic"]); ?>);"></a>			
+<!-- <a style="background-image:url(/wedding/Public/lunbo/<$val.pic}>);"></a> -->
+</li><?php endforeach; endif; ?>
 			</ul>
 			<!-- 页码 -->
 			<div class="g-slidebox">
@@ -80,7 +71,51 @@ if ( domWidth<1200 ) {
 
 
 	</article>
-	<article class="ol-wrap1">
+
+	<article class="ol-wrap2">
+		<section class="frameW">
+			<h2>精选优质会员</h2>
+			<div class="handle">
+<!-- 				<ul id="j-switch">
+					<li data-sex="0" class="btnR2 cur">只看女会员</li>
+					<li data-sex="1" class="btnP2">只看男会员</li>
+				</ul> -->
+			</div>
+			<div class="menberBox">
+				<div id="j-menberBox" class="menberBox">
+				<ul class="menberList clearfix" style="display:block;">
+					<?php if(is_array($list1)): foreach($list1 as $key=>$res): ?><li class="menberItem" data-id="156">
+							
+							<img src="/wedding/Public/uploads/<?php echo ($res["icon"]); ?>" alt="" />
+							<div class="top"></div>
+							
+							<a class="aa" href="<?php echo U('Index/know');?>?id=<?php echo ($res["id"]); ?>&phone=<?php echo ($res["phone"]); ?>">
+							<div class="menberInfo">
+								<h3><?php echo ($res["username"]); ?></h3>
+								<p><?php echo ($res["birth"]); ?></p>
+								<p><?php echo ($res["height"]); ?></p>
+								<ul class="list1">
+									<li>职业：<?php echo ($res["job"]); ?></li>
+									<li>收入：
+								<?php if($res["salary"] == '5'): ?>20000以上
+				                <?php elseif($res["salary"] == '0'): ?>3000-5000
+				                <?php elseif($res["salary"] == '1'): ?>5001-8000
+				                <?php elseif($res["salary"] == '2'): ?>8001-10000
+				                <?php elseif($res["salary"] == '3'): ?>10001-15000
+				                <?php elseif($res["salary"] == '4'): ?>10001-20000<?php endif; ?>
+									</li>
+									<li><h2><a class="focus" href="javascript:;" rel="<?php echo ($res["id"]); ?>">关注Ta</a></h2></li>
+								</ul>
+							</div>
+						</a>
+					</li><?php endforeach; endif; ?>
+		</ul>
+			</div>
+			</div>
+			<div class="VIPbox"></div>
+		</section>
+	</article>
+		<article class="ol-wrap1">
 		<section class="frameW">
 			<h2>珍爱网VIP服务特色</h2>
 			<ul class="teseList">
@@ -132,354 +167,11 @@ if ( domWidth<1200 ) {
 			</ul>
 		</section>
 	</article>
-	<article class="ol-wrap2">
-		<section class="frameW">
-			<h2>精选优质会员</h2>
-			<div class="handle">
-				<ul id="j-switch">
-					<li data-sex="0" class="btnR2 cur">只看女会员</li>
-					<li data-sex="1" class="btnP2">只看男会员</li>
-				</ul>
-				<a class="more" href="/offline/handsomes.do" target="_blank" rel="nofollow">查看更多&gt;</a>
-			</div>
-			<div class="menberBox">
-				<div id="j-menberBox" class="menberBox">
-				<ul class="menberList clearfix" style="display:block;">
-					
-						<li class="menberItem" data-id="156">
-							<img src="/wedding/Public/home/picture/1467848374179_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>杜女士</h3>
-								<p>30岁 162cm</p>
-								<ul class="list1">
-									<li>职业：自由职业</li>
-									<li>收入：3001-5000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTI2NDc4MzE " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="162">
-							<img src="/wedding/Public/home/picture/1465913925895_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>杨女士</h3>
-								<p>24岁 168cm</p>
-								<ul class="list1">
-									<li>职业：舞蹈</li>
-									<li>收入：3001-5000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTI5MDQ0NDA " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="168">
-							<img src="picture/1466587785075_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>李女士</h3>
-								<p>27岁 167cm</p>
-								<ul class="list1">
-									<li>职业：设计师</li>
-									<li>收入：3001-5000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTI5MjE4MDE " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="114">
-							<img src="picture/1464324744995_9.jpeg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>苏女士</h3>
-								<p>26岁 162cm</p>
-								<ul class="list1">
-									<li>职业：--</li>
-									<li>收入：3001-5000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=ODAzMDEzMzE " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="157">
-							<img src="picture/1465796103896_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>江女士</h3>
-								<p>27岁 155cm</p>
-								<ul class="list1">
-									<li>职业：设计师</li>
-									<li>收入：12001-20000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTI4NTUxNjA " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="177">
-							<img src="picture/1466909465108_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>朱女士</h3>
-								<p>29岁 165cm</p>
-								<ul class="list1">
-									<li>职业：销售总监</li>
-									<li>收入：8001-12000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTMyMDA1NzY " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="181">
-							<img src="picture/1465206192696_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>刘女士</h3>
-								<p>27岁 163cm</p>
-								<ul class="list1">
-									<li>职业：其他职业</li>
-									<li>收入：3000元以下</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTI2MDMzNDg " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="161">
-							<img src="picture/1467042683168_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>肖女士</h3>
-								<p>25岁 166cm</p>
-								<ul class="list1">
-									<li>职业：--</li>
-									<li>收入：3000元以下</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTI4ODM1NDI " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="169">
-							<img src="picture/1468602392696_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>李女士</h3>
-								<p>25岁 174cm</p>
-								<ul class="list1">
-									<li>职业：房地产交易</li>
-									<li>收入：5001-8000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTMxNDczNDY " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="180">
-							<img src="picture/1466949906810_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>陈女士</h3>
-								<p>30岁 162cm</p>
-								<ul class="list1">
-									<li>职业：舞蹈</li>
-									<li>收入：3000元以下</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=OTMyOTQ5Nzk " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-				</ul>
-				<ul class="menberList clearfix">
-					
-						<li class="menberItem" data-id="143">
-							<img src="picture/1460954588159_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>邹先生</h3>
-								<p>30岁 173cm</p>
-								<ul class="list1">
-									<li>职业：经销商</li>
-									<li>收入：12001-20000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=MzY4NTY1NzE " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="145">
-							<img src="picture/1407047936084_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>刘先生</h3>
-								<p>27岁 183cm</p>
-								<ul class="list1">
-									<li>职业：工程师</li>
-									<li>收入：8001-12000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=NjkwNDUyNDA " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="146">
-							<img src="picture/1430659334149_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>杨先生</h3>
-								<p>30岁 174cm</p>
-								<ul class="list1">
-									<li>职业：金融</li>
-									<li>收入：20001-50000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=MzIzNDU0NTk " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="144">
-							<img src="picture/1447661531370_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>白先生</h3>
-								<p>31岁 182cm</p>
-								<ul class="list1">
-									<li>职业：景观设计</li>
-									<li>收入：12001-20000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=Nzk3NzQ1MTQ " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="142">
-							<img src="picture/1448468955233_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>裴先生</h3>
-								<p>30岁 177cm</p>
-								<ul class="list1">
-									<li>职业：银行</li>
-									<li>收入：12001-20000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=NzAyMzE1Mjg " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="141">
-							<img src="picture/1452441273090_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>胡先生</h3>
-								<p>26岁 183cm</p>
-								<ul class="list1">
-									<li>职业：销售经理</li>
-									<li>收入：12001-20000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=ODU5NTQ3MjY " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="140">
-							<img src="picture/1452863525421_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>李先生</h3>
-								<p>32岁 180cm</p>
-								<ul class="list1">
-									<li>职业：建筑/房地产</li>
-									<li>收入：12001-20000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=ODczNjY4NDY " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="72">
-							<img src="picture/1431146487228_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>戴先生</h3>
-								<p>28岁 170cm</p>
-								<ul class="list1">
-									<li>职业：银行</li>
-									<li>收入：5001-8000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=Nzg0OTI2NjQ " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="74">
-							<img src="picture/1369113158824_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>杨先生</h3>
-								<p>32岁 177cm</p>
-								<ul class="list1">
-									<li>职业：其他职业</li>
-									<li>收入：8001-12000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=NTQ2NjQ2NDA " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="menberItem" data-id="75">
-							<img src="picture/1442411830704_9.jpg" alt="" />
-							<div class="top"></div>
-							<div class="menberInfo">
-								<h3>朱先生</h3>
-								<p>28岁 170cm</p>
-								<ul class="list1">
-									<li>职业：银行</li>
-									<li>收入：8001-12000元</li>
-								</ul>
-								<ul class="list2">
-									<li><i class="ico1"></i><a href="/offline/applyindex.do?source=104&label=MzgxNzUzNTc " rel="nofollow">我想认识TA</a></li>
-								</ul>
-							</div>
-						</li>
-					
-				</ul>
-			</div>
-			</div>
-			<div class="VIPbox"></div>
-		</section>
-	</article>
 	<article class="ol-wrap3">
 		<section class="frameW">
 			<h2>成功故事</h2>
 			<div class="handle clearfix">
-				<a class="more" href="/offline/loveStoryIndex.do" target="_blank" rel="nofollow">查看更多&gt;</a>
+				<a class="more" href="#" target="_blank" rel="nofollow">查看更多&gt;</a>
 			</div>
 			<div class="succStory">
 				<span class="square square1"></span>
@@ -488,7 +180,7 @@ if ( domWidth<1200 ) {
 				<ul id="j-stroyList" class="stroyList clearfix">
 					
 						<li class="stroyItem ">
-							<a class="blockA" href="/offline/loveStoryDetail.do?loveStoryId=6149" target="_blank" rel="nofollow">
+							<a class="blockA" href="#" target="_blank" rel="nofollow">
 								<span class="succImg"><img src="/wedding/Public/home/picture/1361380319869_2.jpg" alt="" /></span>
 								<div class="succTxt">
 									<h3>珍惜缘分，爱你一生！</h3>
@@ -498,7 +190,7 @@ if ( domWidth<1200 ) {
 						</li>
 					
 						<li class="stroyItem even">
-							<a class="blockA" href="/offline/loveStoryDetail.do?loveStoryId=7131" target="_blank" rel="nofollow">
+							<a class="blockA" href="#" target="_blank" rel="nofollow">
 								<span class="succImg"><img src="/wedding/Public/home/picture/1409887049945_2.jpg" alt="" /></span>
 								<div class="succTxt">
 									<h3>缘分，有时就是分分钟</h3>
@@ -508,7 +200,7 @@ if ( domWidth<1200 ) {
 						</li>
 					
 						<li class="stroyItem ">
-							<a class="blockA" href="/offline/loveStoryDetail.do?loveStoryId=5084" target="_blank" rel="nofollow">
+							<a class="blockA" href="#" target="_blank" rel="nofollow">
 								<span class="succImg"><img src="/wedding/Public/home/picture/1331284759135_2.jpg" alt="" /></span>
 								<div class="succTxt">
 									<h3>我们结婚咯</h3>
@@ -518,7 +210,7 @@ if ( domWidth<1200 ) {
 						</li>
 					
 						<li class="stroyItem even">
-							<a class="blockA" href="/offline/loveStoryDetail.do?loveStoryId=7107" target="_blank" rel="nofollow">
+							<a class="blockA" href="#" target="_blank" rel="nofollow">
 								<span class="succImg"><img src="/wedding/Public/home/picture/1407913047050_2.jpg" alt="" /></span>
 								<div class="succTxt">
 									<h3>谋事在人，成事在天</h3>
@@ -535,13 +227,13 @@ if ( domWidth<1200 ) {
 		<section class="frameW">
 			<h2>红娘风采</h2>
 			<div class="handle clearfix">
-				<a class="more" href="/offline/hnIndex.do" target="_blank">查看更多&gt;</a>
+				<a class="more" href="#" target="_blank">查看更多&gt;</a>
 			</div>
 			<div class="hnListBox">
 				<ul id="j-hnList" class="hnList clearfix">
 					
 						<li class="hnItem">
-							<a href="/offline/hnDetail.do?hnId=NjA1OTU0" target="_blank">
+							<a href="#" target="_blank">
 								<span class="imgBox"><img src="/wedding/Public/home/picture/1452076384243.jpg" alt=""></span>
 								<ul class="txtBox">
 									<li><span>祝老师</span></li>
@@ -551,7 +243,7 @@ if ( domWidth<1200 ) {
 						</li>
 					
 						<li class="hnItem">
-							<a href="/offline/hnDetail.do?hnId=NjA0OTI1" target="_blank">
+							<a href="#" target="_blank">
 								<span class="imgBox"><img src="/wedding/Public/home/picture/1452075872445.jpg" alt=""></span>
 								<ul class="txtBox">
 									<li><span>李老师</span></li>
@@ -561,7 +253,7 @@ if ( domWidth<1200 ) {
 						</li>
 					
 						<li class="hnItem">
-							<a href="/offline/hnDetail.do?hnId=NjA3MTMz" target="_blank">
+							<a href="#" target="_blank">
 								<span class="imgBox"><img src="/wedding/Public/home/picture/1452076562962.jpg" alt=""></span>
 								<ul class="txtBox">
 									<li><span>张老师</span></li>
@@ -571,7 +263,7 @@ if ( domWidth<1200 ) {
 						</li>
 					
 						<li class="hnItem">
-							<a href="/offline/hnDetail.do?hnId=NTAwNzg3" target="_blank">
+							<a href="#" target="_blank">
 								<span class="imgBox"><img src="/wedding/Public/home/picture/1452075395816.jpg" alt=""></span>
 								<ul class="txtBox">
 									<li><span>张老师</span></li>
@@ -589,31 +281,31 @@ if ( domWidth<1200 ) {
 		<section class="frameW">
 			<h2>珍爱网直营门店</h2>
 			<div class="handle clearfix">
-				<a class="more" href="/offline/storeIndex.do" target="_blank">查看更多&gt;</a>
+				<a class="more" href="#" target="_blank">查看更多&gt;</a>
 			</div>
 			<div class="mdListBox">
 				<ul id="j-mdList" class="mdList clearfix">
 					<li class="mdItem">
-						<a href="/offline/citycode-10104000-32">
+						<a href="#">
 							<img src="/wedding/Public/home/picture/tianjin.jpg" alt="">
 							<p>珍爱网天津小白楼店</p>
 						</a>
 					</li>
 					<li class="mdItem">
-						<a href="/offline/citycode-10118002-10">
+						<a href="#">
 							<img src="/wedding/Public/home/picture/suzhou.jpg" alt="">
 							<p>珍爱网苏州圆融时代店</p>
 						</a>
 					</li>
 					<li class="mdItem">
-						<a href="/offline/citycode-10127001-12">
-							<img src="/wedding/Public/picture/chengdu.jpg" alt="">
+						<a href="#">
+							<img src="/wedding/Public/home/picture/chengdu.jpg" alt="">
 							<p>珍爱网成都来福士店</p>
 						</a>
 					</li>
 					<li class="mdItem">
-						<a href="/offline/citycode-10102000-2">
-							<img src="/wedding/Public/picture/beijing.jpg" alt="">
+						<a href="#">
+							<img src="/wedding/Public/home/picture/beijing.jpg" alt="">
 							<p>珍爱网北京西直门店</p>
 						</a>
 					</li>
@@ -699,20 +391,32 @@ if ( domWidth<1200 ) {
     </div>
 </footer>
 <!-- 尾javascript:;部 end -->
-	<script src="/wedding/Public/home/js/jquery-1.8.3.min_e128811.js"></script>
+<script src="/wedding/Public/home/js/jquery-1.8.3.min_e128811.js"></script>
 	<script>
 	$LAB.script("http://i3.zastatic.com/zhenai3/zhenai2015/js/lib/slide.min_aeda8e8.js")
 		.wait(function(){
-			seajs.use('zhenai2015/js/offline/home.js',function(home){
-				home.init({
-					sex:0
-				});
-			});
-
-
 			$('.g-slide').ckSlide({
 				autoPlay: true
 			});
+		})
+
+		$('.focus').click(function(){
+			var love=$(this);
+			var id=love.attr('rel');
+			console.log(id);
+			$.ajax({
+				type:'post',
+				url:'<?php echo U("Index/focus");?>',
+				data:"id="+id,
+				success:function(data){
+					if(data==2){
+						alert('您已成功关注');
+					}else{
+						alert("您已经关注过了，不能重复关注");
+					}
+				}
+			});
+			return false;
 		})
 	</script>
 </body>

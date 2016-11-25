@@ -24,51 +24,6 @@
 			$this->display('Lunbo/add');
 		}
 
-		// public function doadd()
-		// {
-		// 	if(!empty($_FILES))
-		// 	{
-		// 		$config=array(
-		// 			'maxSize' => 31457280,
-		// 			'rootPath' => 'Public',
-		// 			'savePath' => '/lunbo/',
-		// 			'saveName' => array('uniqid','za_'),
-		// 			'exts' => array('jpg','gif','png','jpeg'),
-		// 			'autoSub' => false,
-		// 			'subName' => array('date','Ymd'),
-		// 	);
-		// 		$upload=new \Think\Upload($config);
-		// 		$image=$upload->upload();
-		// 		dump($image);
-		// 		if(!$image){
-		// 			$this->error($upload->getError());
-		// 		}else{
-
-		// 			$map['pic']=$image['pic']['savename'];
-		// 			$map['path']=$image['pic']['savepath'];
-					
-
-		// 		}
-		// 	}
-		// 	$model=M('lunbo');
-		// 	$res=$model->add($map);
-		// 	$sql=$model->_sql();
-		// 	// echo $sql;
-		// 	if($res)
-		// 	{
-		// 		$this->success('图片上传成功',U('Lunbo/index'));
-				
-		// 	}else{
-		// 		$this->error('图片上传失败');
-		// 	}
-
-
-
-		// }
-
-
-
-
 
 		public function doadd()
 		{
@@ -114,20 +69,6 @@
 					$this->redirect('index');
 				}
 			}
-			// $model=M('lunbo');
-			// $res=$model->add($map);
-			// $sql=$model->_sql();
-			// // echo $sql;
-			// if($res)
-			// {
-			// 	$this->success('图片上传成功',U('Lunbo/index'));
-				
-			// }else{
-			// 	$this->error('图片上传失败');
-			// }
-
-
-
 		}
 
 
@@ -180,34 +121,35 @@
 			);
 				$upload=new \Think\Upload($config);
 				$image=$upload->upload();
+				dump($image);
 				if(!$image){
 					$this->error($upload->getError());
 				}else{
-					// $info=$image['pic']['savename'];
-					// $path=$image['pic']['savepath'];
-
 					$map['pic']=$image['pic']['savename'];
-				
-					
-					// $this->success('ok');
+					$map['path']='/Public/'.$image['pic']['savepath'];
+					$map['m_pic']='m_'.$image['pic']['savename'];
+					$map['s_pic']='s_'.$image['pic']['savename'];
+					$image=new \Think\Image;
+					$image->open('./Public/lunbo/'.$map['pic']);
+					$image->thumb(600,400)->save('./Public/lunbo/m_'.$map['pic']);
+					$image->thumb(250,200)->save('./Public/lunbo/s_'.$map['pic']);
 				}
 			}
-
-		
-
 			$model=M('lunbo');
 			$res=$model->where("id='{$id}'")->save($map);
-	
 			$sql=$model->_sql();
-
-			// echo $sql;
 			if($res)
 			{
-				$this->success('图片上传成功',U('Lunbo/index'));
+				$this->success('轮播修改成功',U('Lunbo/index'));
 				
 			}else{
-				$this->error('图片上传失败');
+				$this->error('轮播修改失败');
 			}
 		}
+
+
+
+
+
 	}
 

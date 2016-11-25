@@ -39,10 +39,10 @@
 			<div class="title-bar">
 				<h2 class="left">编辑详细资料</h2>
 			</div>
-			<form action="<?php echo U('Personal/doadd');?>" method="post">
+			<form action="<?php echo U('Personal/doadd');?>" method="post" onsubmit="return checkinputAll();">
 			<div class="col-form">
 			<label>手机号：</label>
-			<input type="text" name="phone" placeholder="手机号必须为原始手机号" style="height:30px;width:160px">
+			<input readonly id="Tel" type="text" name="phone" value="<?php echo ($_SESSION['user']['phone']); ?>" style="height:30px;width:160px">
 			</div>
 			
 			<div class="col-form">
@@ -84,7 +84,7 @@
 			<div class="col-form">
 				<label>身高：</label>
 				<select name="height" style="height:30px;width:160px">
-					<?php $__FOR_START_55__=150;$__FOR_END_55__=210;for($i=$__FOR_START_55__;$i < $__FOR_END_55__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?>cm</option><?php } ?>
+					<?php $__FOR_START_5027__=150;$__FOR_END_5027__=210;for($i=$__FOR_START_5027__;$i < $__FOR_END_5027__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?>cm</option><?php } ?>
 				</select>
 				
 		
@@ -135,8 +135,43 @@
 		</div>
 	</div>
 </div>
-
-
-
 </body>
+<script>
+
+var zaphone=false;
+
+$("#Tel").blur(function(){
+	$("#Tel+p").remove();
+	checkTel(this);
+	$(this).after(msg);
+});
+
+
+	function checkTel(obj)
+{
+	msg = '';
+	if($(obj).val().length<11){
+		msg = "<p class='error'>手机号不少于11</p>";
+	}else{
+		data = {"mobile":$(obj).val()};
+		$.post("<?php echo U('Personal/tel');?>",data,function(d){
+			if(d){
+				msg = "<p class='error'>该号不是注册号码</p>";
+				$("#Tel").after(msg);
+			}else{
+				msg = "<p class='success'>手机号可用</p>";
+				zaphone = true;
+				$("#Tel").after(msg);
+			}
+		});
+	}
+}
+
+	function checkinputAll()
+	{
+
+	if(zaphone){return true;}else{return false;}
+	}
+
+</script>
 </html>

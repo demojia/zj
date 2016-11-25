@@ -39,51 +39,53 @@
 			<div class="title-bar">
 				<h2 class="left">编辑详细资料</h2>
 			</div>
-			<form action="<{:U('Personal/doadd')}>" method="post">
+			<form action="<{:U('Personal/editinfo')}>" method="post" >
+			<foreach name="data" item="v">
+			<input type="hidden" name="id" value="<{$v.id}>">
 			<div class="col-form">
 			<label>手机号：</label>
-			<input type="text" name="phone" placeholder="手机号必须为原始手机号" style="height:30px;width:160px">
+			<input id="Tel" type="text" name="phone" value="<{$v.phone}>" readonly style="height:30px;width:160px">
 			</div>
 			
 			<div class="col-form">
 			<label>体重：</label>
-			<input type="text" name="weight" style="height:30px;width:160px">
+			<input type="text" name="weight" style="height:30px;width:160px" value="<{$v.weight}>">
 			</div>
 
 			<div class="col-form">
 			<label>体型：</label>
-			<select name="figure" id="figure" style="height:30px;width:160px">
-				<option value="0">偏瘦</option>
-				<option value="1">苗条</option>
-				<option value="2">偏胖</option>
-				<option value="3">肥胖</option>
+			<select name="figure" id="figure" style="height:30px;width:160px" value="<{$v.figure}>">
+				<option value="0" <if condition="$v.figure eq '0'">selected</if>>偏瘦</option>
+				<option value="1" <if condition="$v.figure eq '1'">selected</if>>苗条</option>
+				<option value="2" <if condition="$v.figure eq '2'">selected</if>>偏胖</option>
+				<option value="3" <if condition="$v.figure eq '3'">selected</if>>肥胖</option>
 			</select>
 			</div>
 
 		
 			<div class="col-form">
 			<label>公司：</label>
-			<input type="text" name="company" style="height:30px;width:160px">
+			<input type="text" name="company" style="height:30px;width:160px" value="<{$v.company}>">
 			</div>
 
 			<div class="col-form">
 			<label>血型：</label>
-			<input type="text" name="blood" style="height:30px;width:160px">
+			<input type="text" name="blood" style="height:30px;width:160px" value="<{$v.blood}>">
 			</div>
 
 			<div class="col-form">
 			<label>民族：</label>
-			<input type="text" name="minzu" style="height:30px;width:160px">
+			<input type="text" name="minzu" style="height:30px;width:160px" value="<{$v.minzu}>">
 			</div>
 
 			<div class="col-form">
 			<label>信仰</label>
-			<input type="text" name="belief" style="height:30px;width:160px">
+			<input type="text" name="belief" style="height:30px;width:160px" value="<{$v.belief}>">
 			</div>
 
 			<div class="col-form">
 				<label>身高：</label>
-				<select name="height" style="height:30px;width:160px">
+				<select name="height" style="height:30px;width:160px" value="<{$v.height}>">
 					<for start='150' end='210'>
 				<option value="<{$i}>"><{$i}>cm</option>
 					</for>
@@ -94,15 +96,15 @@
 
 			<div class="col-form">
 			<label>工作：</label>
-			<input type="text" name="job" style="height:30px;width:160px">
+			<input type="text" name="job" style="height:30px;width:160px" value="<{$v.job}>">
 			</div>
 
 		
 		
 	
 		
-		
-			<input class="reg-btn" type="submit" value="添加资料" />
+		</foreach>
+			<input class="reg-btn" type="submit" value="编辑资料" />
 			</form>			
 		</div>
 	</div>
@@ -141,5 +143,6 @@
 
 
 </body>
+
 </html>
 

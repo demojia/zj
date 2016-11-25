@@ -3,22 +3,53 @@
 <head>
 <meta charset="UTF-8">
 
-<title>个人中心</title>
+<title><?php echo ($title); ?></title>
 
 <link rel="stylesheet" href="/wedding/Public/home/personal/css/public_44e62d1.css"/>
+<link rel="stylesheet" href="/wedding/Public/jquery-select/css/j-select.css"/>
+<script src="/wedding/Public/jquery-select/js/nicescroll/jquery-nicescroll.js"></script>
+<script src="/wedding/Public/jquery-select/js/jquery-jSelect.min.js"></script>
+<link type="text/css" rel="stylesheet" href="/wedding/Public/home/xingz/css/default.css">
 
 <link rel="stylesheet" href="/wedding/Public/home/personal/css/threeparty_b29ccd2.css" />
 <link rel="stylesheet" href="/wedding/Public/home/personal/css/threepartypop_161810e.css" />
 <link rel="stylesheet" href="/wedding/Public/home/personal/css/ablums_4795796.css" />
 <link rel="stylesheet" href="/wedding/Public/home/personal/css/love_gen_layer.css" />
 <link rel="stylesheet" href="/wedding/Public/home/personal/css/threeparty_b29ccd2.css" />
+<link rel="stylesheet" href="/wedding/Public/home/search/css/public_44e62d1.css" />
+<link rel="stylesheet" href="/wedding/Public/home/search/css/messagebase_2f28019.css" />
+<link rel="stylesheet" href="/wedding/Public/home/search/css/aside_5803793.css" />
+<script type="text/javascript" src="/wedding/Public/home/xingz/js/jquery.min.js"></script>
 
+<script  src="/wedding/Public/home/xingz/js/jscex.min.js"></script>
+
+<script  src="/wedding/Public/home/xingz/js/jscex-parser.js"></script>
+
+<script  src="/wedding/Public/home/xingz/js/jscex-jit.js"></script>
+<script src="/wedding/Public/home/xingz/js/jscex-builderbase.min.js"></script>
+<script  src="/wedding/Public/home/xingz/js/jscex-async.min.js"></script>
+<script  src="/wedding/Public/home/xingz/js/jscex-async-powerpack.min.js"></script>
+<script  src="/wedding/Public/home/xingz/js/functions.js" charset="utf-8"></script>
+<script  src="/wedding/Public/home/xingz/js/love.js" charset="utf-8"></script>
+<link href="/wedding/Public/home/search/css/areaform.css" rel="stylesheet" charset="GBK" />
+<link href="/wedding/Public/home/search/css/search-pin.css" rel="stylesheet" charset="GBK" media="screen" />
 <link rel="stylesheet" href="/wedding/Public/home/personal/css/tipswin_ae73909.css" />
 <script type="text/javascript" src="/wedding/Public/home/personal/js/comlj_737338d.js" charset="UTF-8"></script>
 <script type="text/javascript" src="/wedding/Public/home/personal/js/tipswin_5ed77b4.js" charset="UTF-8"></script>
 <script src="/wedding/Public/home/personal/js/lab.min_e842152.js"></script>
 <script src="/wedding/Public/home/personal/js/sea_7e06016.js"></script>
 <script src="/wedding/Public/home/personal/js/sea-config_300e430.js"></script>
+<script src="/wedding/Public/home/js/jquery-1.8.3.min.js"></script>
+<script rel="stylesheet" href="/wedding/Public/bootstrap/bootstrap.min.js"></script>
+<script rel="stylesheet" href="/wedding/Public/bootstrap/bootstrap.min.js"></script>
+<script rel="stylesheet" href="/wedding/Public/bootstrap/bootstrap.min.js"></script>
+<script src="/wedding/Public/home/search/js/lab.min_e842152.js"></script>
+<script src="/wedding/Public/home/search/js/sea_7e06016.js"></script>
+<script src="/wedding/Public/home/search/js/sea-config_621fcc5.js"></script>
+<link rel="stylesheet" href="/wedding/Public/Home/letter/css/send.css">
+<link rel="stylesheet" href="/wedding/Public/Home/letter/css/footer.css">
+
+
 
 
 
@@ -33,14 +64,14 @@
 
 <header id="jcZAHeader" class="header">
 	<section class="frameW top-bar clearfix">
-		<a class="logo" href="http://www.zhenai.com/" title="珍爱网"><i></i></a>
+		<a class="logo" href="javascipt:;" title="珍爱网"><i></i></a>
 		<p class="ad-word">相亲无难事，珍爱有红娘</p>
 		<div class="tools">
 			<ul class="clearfix">
-				<li class="mobile"><a href="http://mo.zhenai.com" target="_blank" title="珍爱网app下载">手机版</a></li>
+				<li class="mobile"><a href="javascript:;">手机版</a></li>
 				<li class="collect"><a href="javascript:;">收藏本站</a></li>
 				<li class="cust"><a href="javascript:;">在线客服</a></li>
-				<li><a href="http://www.zhenai.com/anquan/" target="_blank" >安全中心</a></li>
+				<li><a href="javascript:;" >安全中心</a></li>
 				
 				<li class="tel">红娘热线：4001-520520</li>
 			</ul>
@@ -51,12 +82,11 @@
 			<menu class="menu">
 				<ul>
 					<li id="jcMenuBeauty" class="bg-scroll"></li>
-					<li><a href="http://profile.zhenai.com/v2/personal/home.do" rel="nofollow">我的珍爱</a></li>
-					<li><a href="http://search.zhenai.com/v2/search/pinterest.do" rel="nofollow">搜索</a></li>
-					<li><a href="http://t.zhenai.com" target="_blank" >
-					直营门店
-					</a></li>
-					<li><a href="http://profile.zhenai.com/zhenaiMail/zhenaiMail.jsps" rel="nofollow">珍心会员</a></li>
+					<li><a href="<?php echo U('Index/index');?>">我的珍爱</a></li>
+					<li><a href="<?php echo U('Search/index');?>">搜索</a></li>
+					<li><a href="<?php echo U('Brain/index');?>">
+					珍爱花边</a></li>
+					<li><a href="<?php echo U('Music/index');?>">珍爱电台</a></li>
 					<li><a href="http://story.zhenai.com/" target="_blank" >成功故事</a></li>
 					<li><a href="http://t.zhenai.com/hnzone/articleIndex.do" target="_blank" rel="nofollow">他她说</a></li>
 					
@@ -88,7 +118,7 @@
 <section class="mod-top-ceiling bord ceiling-js hide">
     <div class="ceiling-box clearfix">
        <div class="ceiling-photo fl">
-           <a href="javascript:;"><img src="picture/default08.jpg" alt="会员98003284照片" /></a>
+           <a href="javascript:;"><img src="/wedding/Public/home/picture/default08.jpg" alt="会员98003284照片" /></a>
        </div> 
        <dl  class="ceiling-dl">
             <dt class="ceiling-dt lh20">
@@ -115,13 +145,15 @@
         <div style="background:white;border:0;width:300px;height:300px" class="photo-album fl">
            
                 <div >
-                <img style="height:300px;width:300px" src="/wedding/Public/uploads/<?php echo ($_SESSION['user']['icon']); ?>">
-                <h3><a href="<?php echo U('Picture/index');?>">上传头像</a></h3>
+                <img style="height:300px;width:300px;border-radius:40px;" src="/wedding/Public/uploads/<?php echo ($_SESSION['user']['icon']); ?>">
+                <h3><a href="<?php echo U('Picture/index');?>">编辑头像</a>&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo U('Personal/photo');?>">查看相册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo U('Letter/mail');?>">我的信箱</a></h3>
                </div>
         </div>
         <div class="brief-top p30">
             <p class="brief-name lh32 blue">
-                <a class="name fs24">会员<?php echo ($phone); ?></a>
+                <a class="name fs24">会员：<?php echo ($_SESSION['user']['username']); ?></a>
             </p>
             <p class="brief-info fs14 lh32 c9f">ID：<?php echo ($phone); ?>
                 <span class="brief-item">积分：<span class="red">2</span></span>
@@ -172,10 +204,21 @@
 
             <div class="icon-group">	
                 
-                <a id="attention" href="javascript:;" class="tp-icon tp-icon-watch">关注</a>
-                <a id="complaint" href="javascript:;" class="tp-icon tp-icon-report">举报/拉黑</a>
-                <a href="<?php echo U('Personal/add');?>">添加详细资料让Ta认识你</a>　　　
-                <a href="<?php echo U('Personal/life');?>">添加生活状况让Ta认识你</a>　　　
+               
+              <?php
+ ?>
+                <a href="javascript:;" id="guanzhu" onmousemove="move()">我关注的人</a>　
+                <div id="kuang" style="position:absolute;top:340px;right:670px;width:60px;display:none">
+              
+                    
+                    <?php if(is_array($list4)): foreach($list4 as $key=>$li): ?><li style="background:pink;text-align:center"><?php echo ($li["fusername"]); ?></li><?php endforeach; endif; ?>
+              
+            
+
+                </div>　
+                <a href="<?php echo U('Personal/add');?>">添加详细资料</a>
+     　　　
+                <a href="<?php echo U('Personal/life');?>">添加生活状况</a>　　　
                 <a href="<?php echo U('Personal/couple');?>">添加择偶条件</a>
                 
             </div>
@@ -303,7 +346,7 @@
                                 <?php elseif($vv["house"] == '1'): ?>偶尔
                                 <?php elseif($vv["house"] == '2'): ?>经常做<?php endif; ?>           
                             </span></td>
-                            <td><a href="<?php echo U('Personal/life');?>">编辑</a></td>
+                            <td><a href="<?php echo U('Personal/lifeinfo');?>">编辑</a></td>
                         </tr><?php endforeach; endif; ?>
                     </table>
                 </div>
@@ -351,19 +394,19 @@
                             </span><span field=""><?php echo ($value["height"]); ?>cm</span></td>
 
                             <td><span class="label">是否抽烟：</span><span field="">
-                                  <?php if($vv["smoke"] == '0'): ?>偶尔
-                                <?php elseif($vv["smoke"] == '1'): ?>不抽
-                                <?php elseif($vv["smoke"] == '2'): ?>不限<?php endif; ?>      
+                                  <?php if($value["smoke"] == '0'): ?>偶尔
+                                <?php elseif($value["smoke"] == '1'): ?>不抽
+                                <?php elseif($value["smoke"] == '2'): ?>不限<?php endif; ?>      
                             </span></td>
                         </tr>
                         <tr>
                             <td><span class="label">学历：</span><span field="">
-                                 <?php if($vo["edu"] == '0'): ?>高中及以下学历
-                            <?php elseif($vo["edu"] == '1'): ?>中专
-                            <?php elseif($vo["edu"] == '2'): ?>大专
-                            <?php elseif($vo["edu"] == '3'): ?>本科
-                            <?php elseif($vo["edu"] == '4'): ?>硕士
-                            <?php elseif($vo["edu"] == '5'): ?>博士<?php endif; ?>
+                                 <?php if($value["edu"] == '0'): ?>高中及以下学历
+                            <?php elseif($value["edu"] == '1'): ?>中专
+                            <?php elseif($value["edu"] == '2'): ?>大专
+                            <?php elseif($value["edu"] == '3'): ?>本科
+                            <?php elseif($value["edu"] == '4'): ?>硕士
+                            <?php elseif($value["edu"] == '5'): ?>博士<?php endif; ?>
                             </span></td>
                             <td><span class="label">是否喝酒：</span><span field="">
                                  <?php if($vv["drink"] == '0'): ?>偶尔
@@ -373,12 +416,12 @@
                         </tr>
                         <tr>
                             <td><span class="label">月收入：</span><span field="">
-                                <?php if($vo["salary"] == '5'): ?>20000以上
-                                    <?php elseif($vo["salary"] == '0'): ?>3000-5000
-                                    <?php elseif($vo["salary"] == '1'): ?>5001-8000
-                                    <?php elseif($vo["salary"] == '2'): ?>8001-10000
-                                    <?php elseif($vo["salary"] == '3'): ?>10001-15000
-                                    <?php elseif($vo["salary"] == '4'): ?>10001-20000<?php endif; ?>
+                                <?php if($value["salary"] == '5'): ?>20000以上
+                                    <?php elseif($value["salary"] == '0'): ?>3000-5000
+                                    <?php elseif($value["salary"] == '1'): ?>5001-8000
+                                    <?php elseif($value["salary"] == '2'): ?>8001-10000
+                                    <?php elseif($value["salary"] == '3'): ?>10001-15000
+                                    <?php elseif($value["salary"] == '4'): ?>10001-20000<?php endif; ?>
                             </span></td>
                             <td><span class="label">有没有孩子：</span><span field="">
                                 <?php if($value["baby"] == '0'): ?>有
@@ -433,9 +476,10 @@
            
             
             	<!-- 超级秋波广告 -->
-	      <!--       <div class="mb10 bgff radius-3 bord imgAdvMod">
+	           <!-- <div style="border:1px solid red;width:200px;height:500px" class="mb10 bgff radius-3 bord imgAdvMod">
 	            	<a href="http://profile.zhenai.com/personal/superLeerSend.jsps?source=profileIndex" target="_blank"><img src="picture/guide_side_5_1a38037.jpg"  alt="超级秋波"/></a>
-	            </div> -->
+
+	            </div>  -->
 	             <!-- 超级秋波广告 end-->
             	
             
@@ -526,13 +570,28 @@ closeDate();
 					
 						
 					<p class="breadNav">
-						当前位置：<a href="http://www.zhenai.com">珍爱首页</a><span>&gt;</span><a href="http://www.zhenai.com/jiaoyou/shenzhen">深圳交友</a><span>&gt;</span><a href="http://www.zhenai.com/jiaoyou/baoan">宝安交友</a><span>&gt;</span><a href="http://www.zhenai.com/jiaoyou/baoan/nan">宝安男士交友</a>
-					</p>	
-						
-					
-					
-				
-					<p>周边征婚：<a target="_blank" href="http://www.zhenai.com/zhenghun/guangdong">广东征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/shenzhen">深圳征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/baoan">宝安征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/chaozhou">潮州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/zhongshan3">中山征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/shaoguan">韶关征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/heyuan">河源征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/yunfu">云浮征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/shanwei">汕尾征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/yangjiang">阳江征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/zhanjiang">湛江征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/foshan">佛山征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/meizhou">梅州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/guangzhou">广州征婚</a><br/></p>
+                        当前位置：<a href="javascript:;">珍爱首页</a><span>&gt;</span><a href="javascript:;">深圳交友</a><span>&gt;</span><a href="javascript:;">宝安交友</a><span>&gt;</span><a href="javascript:;">宝安男士交友</a>
+                    </p>    
+                        
+                    
+                    
+                
+                    <p>周边征婚:
+                    <a href="javascript:;">广东征婚</a>
+                    <a href="javascript:;">深圳征婚</a>
+                    <a href="javascript:;">宝安征婚</a>
+                    <a href="javascript:;">潮州征婚</a>
+                    <a href="javascript:;">中山征婚</a>
+                    <a href="javascript:;">韶关征婚</a>
+                    <a href="javascript:;">河源征婚</a>
+                    <a href="javascript:;">云浮征婚</a>
+                    <a href="javascript:;">汕尾征婚</a>
+                    <a href="javascript:;">阳江征婚</a>
+                    <a href="javascript:;">湛江征婚</a>
+                    <a href="javascript:;">佛山征婚</a>
+                    <a href="javascript:;">梅州征婚</a>
+                    <a href="javascript:;">广州征婚</a>
+                    <br/></p>
 				
 				</div>
 			</div>
@@ -542,8 +601,18 @@ closeDate();
 <footer class="footer">
     <div class="frameW clearfix">
         <div class="about">
-            <div class="quick"><a target="_blank" href="http://about.zhenai.com/" >关于我们</a>|<a target="_blank" href="http://tv.zhenai.com/MeiTiGuanZhu/index.x" rel="nofollow">媒体关注</a>|<a target="_blank" href="http://contact.zhenai.com/" >联系我们</a>|<a target="_blank" href="http://www.zhenai.com/job/" >加入我们</a>|<a target="_blank" href="http://about.zhenai.com/huoban" rel="nofollow">合作伙伴</a>|<a target="_blank" href="http://profile.zhenai.com/personal/getguestbookbegin.jsps" rel="nofollow">意见反馈</a>|<a href="http://www.zhenai.com/sitemap.html" target="_blank">网站地图</a>
-            |<a href="http://www.zhenai.com/ahelpcenter/index.jsp" target="_blank">帮助中心</a>|<a href="http://album.zhenai.com" target="_blank">珍爱会员</a>|<a href="http://city.zhenai.com/" target="_blank">珍爱相亲</a></div>
+            <div class="quick">
+            <a href="javascript:;" >关于我们</a>|
+            <a href="javascript:;" >媒体关注</a>|
+            <a href="javascript:;" >联系我们</a>|
+            <a href="javascript:;" >加入我们</a>|
+            <a href="javascript:;" >合作伙伴</a>|
+            <a href="javascript:;">意见反馈</a>|
+            <a href="javascript:;" >网站地图</a>|
+            <a href="javascript:;">帮助中心</a>|
+            <a href="javascript:;">珍爱会员</a>|
+            <a href="javascript:;" >珍爱相亲</a>
+        </div>
             <div class="brand grayL"><span>品牌：11年专业婚恋服务</span>&nbsp;&nbsp;<span>专业：庞大的资深红娘队伍</span>&nbsp;&nbsp;<span>真实：诚信会员验证体系</span></div>
             <div class="contact grayL"><span>客服热线：4001-520-520（周一至周日：9:00-21:00）</span><span>客服信箱：kefu@zhenai.com（周一至周五：10:00-19:00）</span></div>
             <div class="contact grayL"><span><a style="color:#9f9f9f;" href="http://profile.zhenai.com/v2/sys/reportEntry.do" target="_blank" rel="nofollow">违法和不良信息举报</a></span>&nbsp;&nbsp;<span>违法和不良信息举报专线：4008829288</span>&nbsp;&nbsp;<span>举报信箱：<a style="color: #9f9f9f;" href="mailto:jubao@zhenai.com" class="underlines" rel="nofollow">jubao@zhenai.com</a></span></div>
@@ -551,12 +620,12 @@ closeDate();
         <div class="copyright grayL">
         	<p>Copyright &copy; 2005-2016 版权所有：深圳市珍爱网信息技术有限公司<br>增值电信业务经营许可证粤B2-20040382号 粤ICP备09157619</p>
         	<div class="out-link">
-            	<a target="_blank" title="深圳网警备案" href="http://szgabm.qq.com/" class="link2" rel="nofollow"></a>
-            	<a target="_blank" title="国际联网备案" href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403301900797" class="link1" rel="nofollow"></a>
-            	<a title="深圳举报中心" href="http://szwljb.gov.cn/" class="link6" target="_blank"  rel="nofollow"></a>
-                <a title="违法和不良信息举报中心" href="http://www.12377.cn/" class="link3" target="_blank"  rel="nofollow"></a>  
-                <a title="诚信示范网站" href="https://search.szfw.org/cert/l/CX20150630010588010670" class="link4" target="_blank" rel="nofollow"></a>
-                <a title="AAA级信用企业" href="http://www.itrust.org.cn/Home/Index/itrust_certifi?wm=1761973720" class="link7" target="_blank" rel="nofollow"></a>
+            	<a title="深圳网警备案" href="javascript:;" class="link2" rel="nofollow"></a>
+            	<a title="国际联网备案" href="javascript:;" class="link1" rel="nofollow"></a>
+            	<a title="深圳举报中心" href="javascript:;" class="link6" rel="nofollow"></a>
+                <a title="违法和不良信息举报中心" href="javascript:;" class="link3" ></a>  
+                <a title="诚信示范网站" href="javascript:;" class="link4" rel="nofollow"></a>
+                <a title="AAA级信用企业" href="javascript:;" class="link7" rel="nofollow"></a>
             </div>
         </div>
     </div>
@@ -621,6 +690,17 @@ try{
 }catch(e){
 	
 }
+
+       
+</script>
+<script>
+    var a=document.getElementById('kuang');
+        guanzhu.onclick=function(){
+            a.style.display='none';
+        }
+        guanzhu.onmouseover=function(){
+        a.style.display='block';
+    }
 </script>
 </body>
 </html>

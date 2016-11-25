@@ -42,7 +42,7 @@
 			<form action="<{:U('Personal/addcouple')}>" method="post">
 			<div class="col-form">
 			<label>手机号：</label>
-			<input type="text" name="phone" placeholder="手机号必须一致" style="height:30px;width:160px">
+			<input type="text" readonly name="phone" value="<{$Think.session.user.phone}>" style="height:30px;width:160px">
 			</div>
 			
 			<div class="col-form">
@@ -93,7 +93,7 @@
 			<div class="col-form">
 				<label>婚姻状况：</label>
 				<input type="radio" name='m_status' value='0' checked>未婚&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name='m_status' value='1'>已婚
+				<input type="radio" name='m_status' value='1'>离异
 				<input type="radio" name='m_status' value='2'>丧偶
 			</div>
 

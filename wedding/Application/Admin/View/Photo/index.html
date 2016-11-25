@@ -1,0 +1,89 @@
+<extend name="Moduel/index"/>
+<block name="main">
+<!-- 导航栏开始 -->
+<div class="bjy-admin-nav">
+    <h1>相册管理</h1>
+</div><br>
+
+<!-- 导航栏结束 -->
+<table class="table table-striped table-bordered table-hover table-condensed" style="text-align: center">
+    <tr>
+        <td><b>用户账号</b></td>
+        <td><b>用户昵称</b></td>
+        <td><b>图片</b></td>
+        <td><b>上传时间</b></td>
+        <td><b>图片名</b></td>
+        <td><b>操作</b></td>
+    </tr>
+    <volist name="data" id="v">
+        <tr>
+            <td><{$v.phone}></td>
+            <td><{$v.username}></td>
+
+            <td><image src="__PUBLIC__/photo/s_<{$v.picname}>"></td>
+            <td><?php echo date('Y-m-d h:i',$v['time'])?></td>
+            <td class="ppic"><{$v.picname}></td>
+            <td>
+
+                <button class="pic btn btn-primary">
+                <span class="glyphicon glyphicon-search"></span>查看大图</button>
+                <button class="del btn btn-danger"><span class="glyphicon glyphicon-trash"></span>删除</button>
+            </td>
+        </tr>
+    </volist>
+
+</table>
+
+
+
+<div class="tc" style="width: 100%;height:750px;background: rgba(0,0,0,0.8);position: absolute;float:left;z-index: 1;top: 0px;visibility: hidden;">
+
+</div>
+ <div class="tt" style="width: 600px;height: 400px;background: rgba(0,0,0,0.0);position: absolute;float:left;z-index: 1000;top: 150px;left: 20% ;visibility: hidden;">
+        <image src="" style="position: relative;left:100px">
+    </div>
+
+<script>
+    //删除该条图片信息
+     $('.del').click(function(){
+        var _this = $(this);
+        var picname =$(this).parent().prev('.ppic').html();
+        console.log(picname);
+        $.ajax({
+
+            type:'post',
+            url:"<{:U('Photo/del')}>",
+            data:"picname="+picname,
+            success:function(msg){
+                if(msg > 0){
+                    // alert('删除成功');
+                    _this.parent().parent().remove();
+                }else{
+                    alert('删除失败');
+                }
+            },
+
+        })
+    })
+
+     //查看大图
+     $('.pic').click(function(){
+        var picname =$(this).parent().prev('.ppic').html();
+
+        //设置CSS元素可见
+        $('.tc').css('visibility','visible');
+        $('.tt').css('visibility','visible');
+        $(".tt img").attr("src","__PUBLIC__/photo/"+picname);
+
+     })
+     $('.tc').click(function(){
+        $('.tc').css('visibility','hidden');
+        $('.tt').css('visibility','hidden');
+     })
+</script>
+
+  <div style="color:#feeeed"><{$show}></div>
+
+
+ </block>
+

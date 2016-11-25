@@ -24,7 +24,7 @@
 
 		public function doregister()
 		{
-			echo '1';
+
 			dump($_POST);
 			$_POST['registime']=date('Y-m-d');
 			unset($_POST['repass']);

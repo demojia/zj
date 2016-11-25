@@ -42,7 +42,7 @@
 			<form action="<?php echo U('Personal/addlife');?>" method="post">
 			<div class="col-form">
 			<label>手机号：</label>
-			<input type="text" name="phone" style="height:30px;width:160px">
+			<input type="text" readonly name="phone" style="height:30px;width:160px" value="<?php echo ($_SESSION['user']['phone']); ?>">
 			</div>
 			
 			<div class="col-form">

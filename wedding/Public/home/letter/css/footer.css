@@ -1,0 +1,29 @@
+.footer{
+	width:970px;
+	height:80px;
+	margin:0px auto;
+}
+.footer li{
+	list-style:none;
+	float:left;
+	height:20px;
+	line-height:20px;
+	margin-right:15px;
+	font-size:12px;
+	text-align:center;
+}
+.footer a{
+	color:#333333;
+	text-decoration:none;
+}
+.footer a:hover{
+	text-decoration:underline;
+	color:#E7417F;
+
+}
+.footer ul{
+	width:800px;
+	height:25px;
+	margin:0px auto;
+	padding:0px;
+}

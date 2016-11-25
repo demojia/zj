@@ -7,7 +7,16 @@
 	{
 		public function index()
 		{
-			$this->display();
+			
+			if($_SESSION['user'])
+			{
+				$loginname=$_SESSION['user']['phone'];
+				$this->assign('loginname',$loginname);
+				$this->display();
+			}else
+			{
+				$this->redirect('Login/index');
+			}
 		}
 
 		public function uploadfile()
@@ -49,4 +58,8 @@
 			}
 			
 		}
+
+		
+
+			
 	}
